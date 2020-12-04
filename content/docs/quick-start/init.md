@@ -27,6 +27,9 @@ Copy the toml config on the right into your `config.toml` file.
 
 We'll cover the details of configuring your site in another section.
 {divider}
+{{<code/float-window>}}
+{{< tabs tabTotal="1" tabID="1" tabName1="config.toml">}}
+{{% tab tabNum="1" %}}
 ``` toml
 baseURL = "http://example.org/"
 languageCode = "en-us"
@@ -63,7 +66,7 @@ canonifyURLs = true
     sidebar_bg = "#f6f6f8"
     sidebar_primary = "#1E1F21"
     primary = "#fff"
-    accent = "#e34a3a"
+    accent = "#e3413a"
     grey200 = "#F9F9FA"
     grey600 = "#969DAC"
     grey_head= "#EFEFF3"
@@ -71,6 +74,9 @@ canonifyURLs = true
 [outputs]
     section = ["JSON", "HTML"]
 ```
+{{% /tab %}}
+{{< /tabs >}}
+{{</code/float-window>}}
 {row-divider}
 #### Add your first document
 Hugo renders Markdown content from the `content` folder.
@@ -116,5 +122,20 @@ layout: single-col
 That's it, you can start writing pages in markdown and see them updated in real time!
 {divider}
 ```bash 
+hugo serve
+
+# if you want to include drafts
+
 hugo serve -D
+```
+{row-divider}
+#### Build it
+That's it, you can start writing pages in markdown and see them updated in real time!
+{divider}
+```bash 
+hugo
+
+# if you want to include drafts
+
+hugo -D
 ```
