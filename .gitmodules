@@ -1,0 +1,3 @@
+[submodule "themes/clyde"]
+	path = themes/clyde
+	url = https://github.com/gewenyu99/clyde.git
