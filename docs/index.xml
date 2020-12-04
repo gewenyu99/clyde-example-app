@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clyde Sample App</title>
-    <link>http://example.org/</link>
+    <link>http://example.org/clyde-example-app/</link>
     <description>Recent content on Clyde Sample App</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://example.org/clyde-example-app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Initialize Hugo</title>
-      <link>http://example.org/docs/quick-start/init/</link>
+      <link>http://example.org/clyde-example-app/docs/quick-start/init/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/quick-start/init/</guid>
+      <guid>http://example.org/clyde-example-app/docs/quick-start/init/</guid>
       <description>{row-divider} Before we begin, install Hugo on your system. =&amp;gt; Hugo Documentation {divider} {row-divider}
 Initialize your repo Create a new Hugo site and initialize it as a git repo.
 Then, we can add the Clyde theme. {divider}
@@ -22,10 +22,10 @@ We&amp;rsquo;ll cover the details of configuring your site in another section.</
     
     <item>
       <title>Single Column</title>
-      <link>http://example.org/docs/layout/single/</link>
+      <link>http://example.org/clyde-example-app/docs/layout/single/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/layout/single/</guid>
+      <guid>http://example.org/clyde-example-app/docs/layout/single/</guid>
       <description>This page is a single column page!
 It&amp;rsquo;s just standard Markdown
  Python R CLI   print(&amp;#34;Clyde is a name!&amp;#34;)   print(&amp;#34;Clyde is a name!&amp;#34;)   Clyde dislikes commandline interfaces.
@@ -35,10 +35,10 @@ It&amp;rsquo;s just standard Markdown
     
     <item>
       <title>Two Column</title>
-      <link>http://example.org/docs/layout/two-col/</link>
+      <link>http://example.org/clyde-example-app/docs/layout/two-col/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/layout/two-col/</guid>
+      <guid>http://example.org/clyde-example-app/docs/layout/two-col/</guid>
       <description>{row-divider} This page is in two columns!
 It&amp;rsquo;s just standard Markdown with a minor addition.
 You&amp;rsquo;ll need to add a row-divider in markdown to indicate a new row of content.
@@ -49,10 +49,10 @@ If Clyde feels the window is to narrow, it will wrap the page responsively into 
     
     <item>
       <title>Configuration</title>
-      <link>http://example.org/docs/quick-start/config/</link>
+      <link>http://example.org/clyde-example-app/docs/quick-start/config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/quick-start/config/</guid>
+      <guid>http://example.org/clyde-example-app/docs/quick-start/config/</guid>
       <description>{row-divider}
 Color pallet Clyde is themable, you can make clyde match the color scheme of your projects easily. These parameters can be modified under config.toml {divider}
 [params] #colors secondary = &amp;#34;#1E1F21&amp;#34; sidebar_bg = &amp;#34;#f6f6f8&amp;#34; sidebar_primary = &amp;#34;#1E1F21&amp;#34; primary = &amp;#34;#fff&amp;#34; accent = &amp;#34;#e3413a&amp;#34; grey200 = &amp;#34;#F9F9FA&amp;#34; grey600 = &amp;#34;#969DAC&amp;#34; grey_head= &amp;#34;#EFEFF3&amp;#34; {row-divider}
