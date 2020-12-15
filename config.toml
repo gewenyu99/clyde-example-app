@@ -39,6 +39,8 @@ canonifyURLs = true
     grey_head= "#EFEFF3"
 
     logo = "/default_button.png"
+
+    home = "/quick-start"
 [outputs]
     section = ["JSON", "HTML"]
 
