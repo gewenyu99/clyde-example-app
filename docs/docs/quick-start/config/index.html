@@ -31,8 +31,15 @@
             --sidebar-bg: #f6f6f8;
             --sidebar-primary: #1E1F21;
             --accent: #e3413a;
+            --grey100: ;
             --grey200: #F9F9FA;
+            --grey300: ;
+            --grey400: ;
+            --grey500: ;
             --grey600: #969DAC;
+            --grey700: ;
+            --grey800: ;
+            --grey900: ;
             --grey-head: #EFEFF3;
             --nav-highlight: ;
         }
@@ -44,7 +51,7 @@
     <button id="logo-collapse-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
         <img id="logo" src="../../../default_button.png" alt="Clyde Sample App"> 
     </button>
-
+    
     
 
 
@@ -65,17 +72,23 @@
     <div class="collapse show">
         <div class="nav-list">
             
+                
                 <a class="nav-link" href="../../../docs/quick-start/init/"> 
                     <h3 class="sidebar-h2  subitem" 
                     id="">
-                        Initialize Hugo
+                        
+                            Initialize Hugo
+                        
                     </h3>
                 </a>
             
+                
                 <a class="nav-link" href="../../../docs/quick-start/config/"> 
                     <h3 class="sidebar-h2 nav-highlight subitem" 
                     id="scrollto">
-                        Configuration
+                        
+                            Configuration
+                        
                     </h3>
                 </a>
                             
@@ -95,19 +108,41 @@
     <div class="collapse ">
         <div class="nav-list">
             
+                
                 <a class="nav-link" href="../../../docs/layout/single/"> 
                     <h3 class="sidebar-h2  subitem" 
                     id="">
-                        Single Column
+                        
+                            Single Column
+                        
                     </h3>
                 </a>
             
+                
                 <a class="nav-link" href="../../../docs/layout/two-col/"> 
                     <h3 class="sidebar-h2  subitem" 
                     id="">
-                        Two Column
+                        
+                            Two Column
+                        
                     </h3>
                 </a>
+                            
+        </div>
+    </div>
+
+    <div class="collapse-header">
+        <a class="nav-link" href="../../../docs/short-code/"> 
+            <i class="icon-layout navicon"></i>
+            <h3 class="sidebar-h1  mainitem" 
+            id="">
+                Short Code
+            </h3>
+        </a>
+    </div>
+    
+    <div class="collapse ">
+        <div class="nav-list">
                             
         </div>
     </div>
@@ -158,6 +193,29 @@
 
 
 
+    
+
+
+
+
+
+    
+    <div class="row">
+        <div class="content-area">
+            <p class="boxtext"></p>
+<h4 id="base-url">Base URL</h4>
+<p>The base URL has 2 components.</p>
+<ol>
+<li><code>http://example.org/</code> is a generic domain place holder, this shows Hugo where the base domain begins and ends</li>
+<li><code>clyde-example-app/</code> this is where you specify the root route of your app. All relative urls will resolve to <code>clyde-example-app/&lt;hugo routing&gt;/...</code></p>
+        </div>
+        <div class="example-area">
+            </li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/clyde-example-app/&#34;</span>
+</code></pre></div><p>
+        </div>
+    </div>
     
 
 

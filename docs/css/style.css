@@ -57,8 +57,15 @@ p {
     font-weight: 500;
     font-size: 15px;
     line-height: 140%;
+    color: var(--grey800);
 }
-
+pre {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex: none;
+}
 .img-fluid{
     padding: 27px 8px !important;
 }
@@ -93,13 +100,6 @@ p {
     color: var(--primary);
 }
 
-#logo{
-    margin-top: 24px;
-    margin-left: 20px;
-    height: 32px;
-    margin-bottom: 44px;
-}
-
 .img-fluid{
     padding: 27px 8px !important;
 }
@@ -111,13 +111,6 @@ p {
     right: 8px;
     margin: 24px 0px;
 }
-
-/* .scroll-box {
-    padding: 0;
-    margin: 0;
-    overflow-y: scroll;
-    bottom: 0px;
-} */
 
 .img-fluid {
     padding: 20px;

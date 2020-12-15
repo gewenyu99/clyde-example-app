@@ -8,6 +8,16 @@ type: docs
 layout: two-col
 ---
 {row-divider}
+#### Base URL
+The base URL has 2 components.
+1. `http://example.org/` is a generic domain place holder, this shows Hugo where the base domain begins and ends
+2. `clyde-example-app/` this is where you specify the root route of your app. All relative urls will resolve to `clyde-example-app/<hugo routing>/...`
+{divider}
+``` toml
+baseURL = "http://example.org/clyde-example-app/"
+```
+
+{row-divider}
 #### Color pallet
 Clyde is themable, you can make clyde match the color scheme of your projects easily. These parameters can be modified under `config.toml`
 {divider}

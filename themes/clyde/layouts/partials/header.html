@@ -3,7 +3,7 @@
     <button id="logo-collapse-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
         <img id="logo" src="{{ $logo }}" alt="{{ site.Title }}"> 
     </button>
-
+    <!-- renders nav items -->
     {{ template "nav_item" .}}
 </div>
 
@@ -27,10 +27,15 @@
     <div class="collapse {{if $curPage.IsDescendant . }}show{{end}}">
         <div class="nav-list">
             {{ range .Pages }}
+                {{$f_name := .File.LogicalName}}
                 <a class="nav-link" href="{{.RelPermalink}}"> 
                     <h3 class="sidebar-h2 {{if eq $curUID .File.UniqueID}}nav-highlight{{end}} subitem" 
                     id="{{if eq $curUID .File.UniqueID}}scrollto{{end}}">
-                        {{ .Title }}
+                        {{ if .Title}}
+                            {{ .Title }}
+                        {{ else }}
+                        {{$f_name }}
+                        {{end}}
                     </h3>
                 </a>
             {{ end }}                

@@ -31,8 +31,15 @@
             --sidebar-bg: #f6f6f8;
             --sidebar-primary: #1E1F21;
             --accent: #e3413a;
+            --grey100: ;
             --grey200: #F9F9FA;
+            --grey300: ;
+            --grey400: ;
+            --grey500: ;
             --grey600: #969DAC;
+            --grey700: ;
+            --grey800: ;
+            --grey900: ;
             --grey-head: #EFEFF3;
             --nav-highlight: ;
         }
@@ -44,7 +51,7 @@
     <button id="logo-collapse-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
         <img id="logo" src="../../../default_button.png" alt="Clyde Sample App"> 
     </button>
-
+    
     
 
 
@@ -65,17 +72,23 @@
     <div class="collapse ">
         <div class="nav-list">
             
+                
                 <a class="nav-link" href="../../../docs/quick-start/init/"> 
                     <h3 class="sidebar-h2  subitem" 
                     id="">
-                        Initialize Hugo
+                        
+                            Initialize Hugo
+                        
                     </h3>
                 </a>
             
+                
                 <a class="nav-link" href="../../../docs/quick-start/config/"> 
                     <h3 class="sidebar-h2  subitem" 
                     id="">
-                        Configuration
+                        
+                            Configuration
+                        
                     </h3>
                 </a>
                             
@@ -95,19 +108,41 @@
     <div class="collapse show">
         <div class="nav-list">
             
+                
                 <a class="nav-link" href="../../../docs/layout/single/"> 
                     <h3 class="sidebar-h2 nav-highlight subitem" 
                     id="scrollto">
-                        Single Column
+                        
+                            Single Column
+                        
                     </h3>
                 </a>
             
+                
                 <a class="nav-link" href="../../../docs/layout/two-col/"> 
                     <h3 class="sidebar-h2  subitem" 
                     id="">
-                        Two Column
+                        
+                            Two Column
+                        
                     </h3>
                 </a>
+                            
+        </div>
+    </div>
+
+    <div class="collapse-header">
+        <a class="nav-link" href="../../../docs/short-code/"> 
+            <i class="icon-layout navicon"></i>
+            <h3 class="sidebar-h1  mainitem" 
+            id="">
+                Short Code
+            </h3>
+        </a>
+    </div>
+    
+    <div class="collapse ">
+        <div class="nav-list">
                             
         </div>
     </div>

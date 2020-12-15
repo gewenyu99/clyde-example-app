@@ -31,8 +31,15 @@
             --sidebar-bg: #f6f6f8;
             --sidebar-primary: #1E1F21;
             --accent: #e3413a;
+            --grey100: ;
             --grey200: #F9F9FA;
+            --grey300: ;
+            --grey400: ;
+            --grey500: ;
             --grey600: #969DAC;
+            --grey700: ;
+            --grey800: ;
+            --grey900: ;
             --grey-head: #EFEFF3;
             --nav-highlight: ;
         }
@@ -44,7 +51,7 @@
     <button id="logo-collapse-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
         <img id="logo" src="../../../default_button.png" alt="Clyde Sample App"> 
     </button>
-
+    
     
 
 
@@ -65,17 +72,23 @@
     <div class="collapse ">
         <div class="nav-list">
             
+                
                 <a class="nav-link" href="../../../docs/quick-start/init/"> 
                     <h3 class="sidebar-h2  subitem" 
                     id="">
-                        Initialize Hugo
+                        
+                            Initialize Hugo
+                        
                     </h3>
                 </a>
             
+                
                 <a class="nav-link" href="../../../docs/quick-start/config/"> 
                     <h3 class="sidebar-h2  subitem" 
                     id="">
-                        Configuration
+                        
+                            Configuration
+                        
                     </h3>
                 </a>
                             
@@ -95,19 +108,41 @@
     <div class="collapse show">
         <div class="nav-list">
             
+                
                 <a class="nav-link" href="../../../docs/layout/single/"> 
                     <h3 class="sidebar-h2  subitem" 
                     id="">
-                        Single Column
+                        
+                            Single Column
+                        
                     </h3>
                 </a>
             
+                
                 <a class="nav-link" href="../../../docs/layout/two-col/"> 
                     <h3 class="sidebar-h2 nav-highlight subitem" 
                     id="scrollto">
-                        Two Column
+                        
+                            Two Column
+                        
                     </h3>
                 </a>
+                            
+        </div>
+    </div>
+
+    <div class="collapse-header">
+        <a class="nav-link" href="../../../docs/short-code/"> 
+            <i class="icon-layout navicon"></i>
+            <h3 class="sidebar-h1  mainitem" 
+            id="">
+                Short Code
+            </h3>
+        </a>
+    </div>
+    
+    <div class="collapse ">
+        <div class="nav-list">
                             
         </div>
     </div>
@@ -169,12 +204,17 @@
         <div class="content-area">
             <p class="boxtext">This page is in two columns!</p>
 <p>It&rsquo;s just standard Markdown with a minor addition.</p>
-<p>You&rsquo;ll need to add a <code>row-divider</code> in markdown to indicate a new row of content.</p>
-<p>You&rsquo;ll need to add a <code>divider</code> in markdown to indicate where to split the row.</p>
+<p>You&rsquo;ll need to add a <code>{</code> <code>row-divider</code> <code>}</code> in markdown to indicate a new row of content.</p>
+<p>You&rsquo;ll need to add a <code>{</code> <code>divider</code> <code>}</code> in markdown to indicate where to split the row.</p>
 <p>Clyde will only display content that is properly formatted like this.</p>
 <p>If Clyde feels the window is to narrow, it will wrap the page responsively into a single column.</p>
 <p><em><strong>Check the source code of this page to see the details. Clyde is a man of habbit, he will render the divider tags if I include them in this page.</strong></em></p>
-<h2 id="rules-are-rules-man---clyde-2020">Rules are rules man - Clyde 2020</h2>
+<figure>
+    <img src="../../../default_button.png" width="500rem"/> <figcaption>
+            <h4>Rules are rules man - Clyde 2020</h4>
+        </figcaption>
+</figure>
+
 <p></p>
         </div>
         <div class="example-area">

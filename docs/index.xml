@@ -41,8 +41,8 @@ It&amp;rsquo;s just standard Markdown
       <guid>http://example.org/clyde-example-app/docs/layout/two-col/</guid>
       <description>{row-divider} This page is in two columns!
 It&amp;rsquo;s just standard Markdown with a minor addition.
-You&amp;rsquo;ll need to add a row-divider in markdown to indicate a new row of content.
-You&amp;rsquo;ll need to add a divider in markdown to indicate where to split the row.
+You&amp;rsquo;ll need to add a { row-divider } in markdown to indicate a new row of content.
+You&amp;rsquo;ll need to add a { divider } in markdown to indicate where to split the row.
 Clyde will only display content that is properly formatted like this.
 If Clyde feels the window is to narrow, it will wrap the page responsively into a single column.</description>
     </item>
@@ -54,9 +54,9 @@ If Clyde feels the window is to narrow, it will wrap the page responsively into 
       
       <guid>http://example.org/clyde-example-app/docs/quick-start/config/</guid>
       <description>{row-divider}
-Color pallet Clyde is themable, you can make clyde match the color scheme of your projects easily. These parameters can be modified under config.toml {divider}
-[params] #colors secondary = &amp;#34;#1E1F21&amp;#34; sidebar_bg = &amp;#34;#f6f6f8&amp;#34; sidebar_primary = &amp;#34;#1E1F21&amp;#34; primary = &amp;#34;#fff&amp;#34; accent = &amp;#34;#e3413a&amp;#34; grey200 = &amp;#34;#F9F9FA&amp;#34; grey600 = &amp;#34;#969DAC&amp;#34; grey_head= &amp;#34;#EFEFF3&amp;#34; {row-divider}
-Logos Clyde allows you to use square logos for your site. It will appear on the top of the sidebar menu, when the menu auto collapses, you can reopen it using the logo as a button.</description>
+Base URL The base URL has 2 components.
+ http://example.org/ is a generic domain place holder, this shows Hugo where the base domain begins and ends clyde-example-app/ this is where you specify the root route of your app. All relative urls will resolve to clyde-example-app/&amp;lt;hugo routing&amp;gt;/... {divider}  baseURL = &amp;#34;http://example.org/clyde-example-app/&amp;#34; {row-divider}
+Color pallet Clyde is themable, you can make clyde match the color scheme of your projects easily. These parameters can be modified under config.</description>
     </item>
     
   </channel>

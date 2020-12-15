@@ -70,7 +70,9 @@ canonifyURLs = true
     grey200 = "#F9F9FA"
     grey600 = "#969DAC"
     grey_head= "#EFEFF3"
-
+    logo = "/default_button.png"
+    home = "/quick-start"
+    
 [outputs]
     section = ["JSON", "HTML"]
 ```
