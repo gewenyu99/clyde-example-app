@@ -35,7 +35,7 @@ canonifyURLs = true
     primary = "#fff"
     accent = "#e3413a"
     grey200 = "#F9F9FA"
-    grey600 = "#969DAC"
+    grey600 = "#1E1F21"
     grey_head= "#EFEFF3"
 
     logo = "/default_button.png"
