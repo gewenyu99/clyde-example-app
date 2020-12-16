@@ -78,8 +78,8 @@ Color pallet Clyde is themable, you can make clyde match the color scheme of you
       
       <guid>http://example.org/clyde-example-app/docs/folder-structure/section-structure/</guid>
       <description>{row-divider}
-Base URL The base URL has 2 components.
- http://example.org/ is a generic domain place holder, this shows Hugo where the base domain begins and ends clyde-example-app/ this is where you specify the root route of your app. All relative urls will resolve to clyde-example-app/&amp;lt;hugo routing&amp;gt;/... {divider}  baseURL = &amp;#34;http://example.org/clyde-example-app/&amp;#34; </description>
+What are sections? Each subfolder under content is a section, for example: content/docs. Each section has its unique, auto generated sidebar menu. We keep these sections 2 layers deep, with a structure of type: category/type: docs. {divider}
+content └── docs ├── folder-structure │ ├── _index.md │ ├── project-structure.md │ └── section-structure.md ├── layout │ ├── _index.md │ ├── single.md │ └── two-col.md ├── quick-start │ ├── _index.md │ ├── config.</description>
     </item>
     
   </channel>

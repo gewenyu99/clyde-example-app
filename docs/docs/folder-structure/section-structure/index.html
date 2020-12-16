@@ -258,17 +258,142 @@
     <div class="row">
         <div class="content-area">
             <p class="boxtext"></p>
-<h4 id="base-url">Base URL</h4>
-<p>The base URL has 2 components.</p>
-<ol>
-<li><code>http://example.org/</code> is a generic domain place holder, this shows Hugo where the base domain begins and ends</li>
-<li><code>clyde-example-app/</code> this is where you specify the root route of your app. All relative urls will resolve to <code>clyde-example-app/&lt;hugo routing&gt;/...</code></p>
+<h4 id="what-are-sections">What are sections?</h4>
+<p>Each subfolder under <code>content</code> is a section, for example: <code>content/docs</code>. Each section has its unique, auto generated sidebar menu. We keep these sections 2 layers deep, with a structure of <code>type: category</code>/<code>type: docs</code>.</p>
         </div>
         <div class="example-area">
-            </li>
-</ol>
-<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/clyde-example-app/&#34;</span>
+            </p>
+<pre><code>content
+    └── docs
+        ├── folder-structure
+        │   ├── _index.md
+        │   ├── project-structure.md
+        │   └── section-structure.md
+        ├── layout
+        │   ├── _index.md
+        │   ├── single.md
+        │   └── two-col.md
+        ├── quick-start
+        │   ├── _index.md
+        │   ├── config.md
+        │   └── init.md
+        └── short-code
+            ├── _index.md
+            └── two-col.md
+</code></pre><p>
+        </div>
+    </div>
+    
+
+
+
+
+
+    
+    <div class="row">
+        <div class="content-area">
+            <p class="boxtext"></p>
+<h4 id="how-the-sidebar-menu-works">How the sidebar menu works</h4>
+<p>Notice the <code>_index.md</code> file in each folder under the <code>docs</code> section? They specify how the <code>category</code> represented by each folder is rendered at the side bar.</p>
+<p>The example provided is the <code>Folder Structure</code> category.</p>
+<p><code>title: &quot;Folder Structure&quot;</code> specifies the name of the side bar item.
+<code>icon: &quot;icon-folder&quot;</code> specifies icon name (we use feather icons).
+<code>type : &quot;category&quot;</code> specifies that this file is rendered as a category
+<code>weight: 2</code> is used to order the menu items, from 1 onwards</p>
+<p>The files, like <code>section-structure.md</code> have <code>type: docs</code> specified in the front matter. These are the subitems of each category.
+<code>title: &quot;Folder Structure&quot;</code> specifies the name of the side bar item.
+<code>draft: &quot;false&quot;</code> is used to mark drafts, so they&rsquo;re ignored during builds
+<code>type : &quot;docs&quot;</code> specifies that this file is rendered as a document item
+<code>weight: 2</code> is used to order the menu items, from 1 onwards
+<code>layout: two-col</code> specifies the layout</p>
+<p></p>
+        </div>
+        <div class="example-area">
+            <div class="example">
+        
+<nav>
+	<div class="nav nav-tabs tabs-head" role="tablist">
+
+		
+		
+
+		
+		
+		
+
+		
+
+		<a class="nav-item nav-link content-tab active" id="nav-1" data-toggle="tab" href="#tab11" role="tab"
+		   aria-controls="nav-home" aria-selected="true">_index.md</a>
+
+		
+		
+
+		
+		
+		
+
+		
+
+		<a class="nav-item nav-link content-tab" id="nav-1" data-toggle="tab" href="#tab12" role="tab"
+		   aria-controls="nav-home" aria-selected="false">section-structure.md</a>
+
+		
+		
+
+	</div>
+</nav>
+
+<div class="tab-content scroll" id="1">
+
+
+
+
+
+
+
+
+
+<div class="tab-pane fade show active" id="tab11" role="tabpanel" aria-labelledby="nav-tabName1">
+
+	<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">---
+title: &#34;Folder Structure&#34;
+icon: &#34;icon-folder&#34;
+type : &#34;category&#34;
+weight: 2
+---
 </code></pre></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="tab-pane fade" id="tab12" role="tabpanel" aria-labelledby="nav-tabName2">
+
+	<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">---
+title: &#34;Section Structure&#34;
+weight: 2
+draft: false
+lastmod: 2020-11-5
+type: docs
+layout: two-col
+---
+</code></pre></div>
+
+</div>
+
+
+
+
+</div>
+
+</div></p>
         </div>
     </div>
     
