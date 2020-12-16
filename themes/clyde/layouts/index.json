@@ -1,5 +1,5 @@
 [
-    {{ range $index, $value := where .Site.Pages "Type" "docs" }}
+    {{ range $index, $value := .Site.Pages }}
     {{ if $index }}, {{ end }}
     {
         "url": "{{ .RelPermalink }}",

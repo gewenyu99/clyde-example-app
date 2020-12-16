@@ -36,7 +36,7 @@
             --grey300: ;
             --grey400: ;
             --grey500: ;
-            --grey600: #969DAC;
+            --grey600: #1E1F21;
             --grey700: ;
             --grey800: ;
             --grey900: ;
@@ -48,9 +48,9 @@
     <title>Clyde Sample App | Tags</title>
 </head><body>
     
-
-        <script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/jquery-3.5.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
     document.getElementById("scrollto").scrollIntoView(true);
@@ -129,7 +129,7 @@ window.onload = function() {
     searchResults = document.getElementById('search-results')
 
     
-    fetch('/docs/index.json', {
+    fetch('/index.json', {
         method: 'get'
     }).then(
         res => res.json()
@@ -160,7 +160,5 @@ window.onload = function() {
         }
     )
 }
-</script>
-
-</body>
+</script></body>
 </html>

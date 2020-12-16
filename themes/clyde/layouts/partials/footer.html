@@ -1,1 +1,8 @@
-<p class="footer">Copyright (c) {{ now.Format "2006"}} {{.Site.Params.company}}</p>
+<div class="footer-container">
+    {{ range .Site.Menus.footer }}
+        <a class="footer-link" href="{{ .URL }}">
+            {{ .Pre }} 
+            <span>{{ .Name }}</span>
+        </a>
+    {{ end }}
+</div>

@@ -37,7 +37,7 @@
             --grey300: ;
             --grey400: ;
             --grey500: ;
-            --grey600: #969DAC;
+            --grey600: #1E1F21;
             --grey700: ;
             --grey800: ;
             --grey900: ;
@@ -48,7 +48,8 @@
     
     <title>Clyde Sample App</title>
 </head><body>
-    <!DOCTYPE html>
+    
+        <!DOCTYPE html>
 <html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,7 +87,7 @@
             --grey300: ;
             --grey400: ;
             --grey500: ;
-            --grey600: #969DAC;
+            --grey600: #1E1F21;
             --grey700: ;
             --grey800: ;
             --grey900: ;
@@ -136,7 +137,7 @@
             --grey300: ;
             --grey400: ;
             --grey500: ;
-            --grey600: #969DAC;
+            --grey600: #1E1F21;
             --grey700: ;
             --grey800: ;
             --grey900: ;
@@ -146,7 +147,9 @@
     </style>
     
     <title>Clyde Sample App | Initialize Hugo</title>
-</head><body><div class="sidebar" id="sidebar-nav">
+</head><body>
+
+<div class="sidebar" id="sidebar-nav">
     
     <button id="logo-collapse-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
         <img id="logo" src="./default_button.png" alt="Clyde Sample App"> 
@@ -156,15 +159,16 @@
 
 
 
-
 <div class="card sidebar-card">
 
+    
     <div class="collapse-header">
         <a class="nav-link" href="./docs/quick-start/"> 
             <i class="icon-layers navicon"></i>
             <h3 class="sidebar-h1  mainitem" 
             id="">
                 Quick Start
+                
             </h3>
         </a>
     </div>
@@ -194,13 +198,55 @@
                             
         </div>
     </div>
+    
 
+    
+    <div class="collapse-header">
+        <a class="nav-link" href="./docs/folder-structure/"> 
+            <i class="icon-folder navicon"></i>
+            <h3 class="sidebar-h1  mainitem" 
+            id="">
+                Folder Structure
+                
+            </h3>
+        </a>
+    </div>
+    
+    <div class="collapse ">
+        <div class="nav-list">
+            
+                
+                <a class="nav-link" href="./docs/folder-structure/project-structure/"> 
+                    <h3 class="sidebar-h2  subitem" 
+                    id="">
+                        
+                            Project Structure
+                        
+                    </h3>
+                </a>
+            
+                
+                <a class="nav-link" href="./docs/folder-structure/section-structure/"> 
+                    <h3 class="sidebar-h2  subitem" 
+                    id="">
+                        
+                            Section Structure
+                        
+                    </h3>
+                </a>
+                            
+        </div>
+    </div>
+    
+
+    
     <div class="collapse-header">
         <a class="nav-link" href="./docs/layout/"> 
             <i class="icon-layout navicon"></i>
             <h3 class="sidebar-h1  mainitem" 
             id="">
                 Page Layout
+                
             </h3>
         </a>
     </div>
@@ -230,13 +276,16 @@
                             
         </div>
     </div>
+    
 
+    
     <div class="collapse-header">
         <a class="nav-link" href="./docs/short-code/"> 
-            <i class="icon-layout navicon"></i>
+            <i class="icon-code navicon"></i>
             <h3 class="sidebar-h1  mainitem" 
             id="">
                 Short Code
+                
             </h3>
         </a>
     </div>
@@ -246,10 +295,17 @@
                             
         </div>
     </div>
+    
 
 </div>
 
+    <div class="footer-container">
+    
 </div>
+</div>
+
+
+
 
 <div class="content" id="content"><div class="content-header">
     <div id="search-input-div">
@@ -596,9 +652,9 @@ hugo -D
 </div>
 </div>
 
-
-        <script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/jquery-3.5.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
     document.getElementById("scrollto").scrollIntoView(true);
@@ -677,7 +733,7 @@ window.onload = function() {
     searchResults = document.getElementById('search-results')
 
     
-    fetch('/docs/index.json', {
+    fetch('/index.json', {
         method: 'get'
     }).then(
         res => res.json()
@@ -708,15 +764,13 @@ window.onload = function() {
         }
     )
 }
-</script>
-
-</body>
+</script></body>
 </html>
 
     
-
-        <script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/jquery-3.5.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
     document.getElementById("scrollto").scrollIntoView(true);
@@ -795,7 +849,7 @@ window.onload = function() {
     searchResults = document.getElementById('search-results')
 
     
-    fetch('/docs/index.json', {
+    fetch('/index.json', {
         method: 'get'
     }).then(
         res => res.json()
@@ -826,14 +880,13 @@ window.onload = function() {
         }
     )
 }
-</script>
-
-</body>
+</script></body>
 </html>
 
-
-        <script src="./js/jquery-3.5.1.min.js"></script>
+    
+<script src="./js/jquery-3.5.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
     document.getElementById("scrollto").scrollIntoView(true);
@@ -912,7 +965,7 @@ window.onload = function() {
     searchResults = document.getElementById('search-results')
 
     
-    fetch('/docs/index.json', {
+    fetch('/index.json', {
         method: 'get'
     }).then(
         res => res.json()
@@ -943,7 +996,5 @@ window.onload = function() {
         }
     )
 }
-</script>
-
-</body>
+</script></body>
 </html>

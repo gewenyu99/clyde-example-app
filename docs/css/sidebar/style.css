@@ -35,7 +35,10 @@
     order: -1; /* default is 0 */
     overflow-y: hidden;
     flex-direction: column;
-    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;    
     flex-shrink: 0;
     height: 100%;
 }
@@ -117,7 +120,10 @@
     background-color: transparent;
     padding: 0px;
     margin: 0px;
-    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;  
     flex-direction: row;
     justify-content: start;
     border: none;
@@ -131,6 +137,19 @@
     cursor: default;
 }
 
+.footer-container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;  
+    flex-direction: column;
+    padding: 16px 16px;
+}
+.footer-link{
+    color: var(--grey600);
+    font-size: 12px;
+}
+
 @media (max-width: 1400px) {
     /* CSS that should be displayed if width is equal to or less than 1000px goes here */
     .sidebar .sidebar-h1{
@@ -139,16 +158,25 @@
     .sidebar .collapse{
         display: none;
     }
+    .sidebar .footer-container{
+        display: none;
+    }
     .sidebar{
         width: 72px;
     }
 
     @media(hover: hover) and (pointer: fine) {
         .sidebar:hover .sidebar-h1{
-            display: flex;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;  
         }
         .sidebar:hover .collapse.show{
-            display: flex;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;  
         }
         .sidebar:hover{
             width: 225px;
@@ -160,10 +188,16 @@
     }
 
     .sidebar.show .sidebar-h1{
-        display: flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;  
     }
     .sidebar.show .collapse.show{
-        display: flex;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;  
     }
     .sidebar.show{
         width: 225px;

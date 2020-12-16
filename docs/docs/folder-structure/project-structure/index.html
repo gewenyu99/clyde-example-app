@@ -45,7 +45,7 @@
         }
     </style>
     
-    <title>Clyde Sample App | Single Column</title>
+    <title>Clyde Sample App | Project Structure</title>
 </head><body>
 
 <div class="sidebar" id="sidebar-nav">
@@ -111,13 +111,13 @@
         </a>
     </div>
     
-    <div class="collapse ">
+    <div class="collapse show">
         <div class="nav-list">
             
                 
                 <a class="nav-link" href="../../../docs/folder-structure/project-structure/"> 
-                    <h3 class="sidebar-h2  subitem" 
-                    id="">
+                    <h3 class="sidebar-h2 nav-highlight subitem" 
+                    id="scrollto">
                         
                             Project Structure
                         
@@ -150,13 +150,13 @@
         </a>
     </div>
     
-    <div class="collapse show">
+    <div class="collapse ">
         <div class="nav-list">
             
                 
                 <a class="nav-link" href="../../../docs/layout/single/"> 
-                    <h3 class="sidebar-h2 nav-highlight subitem" 
-                    id="scrollto">
+                    <h3 class="sidebar-h2  subitem" 
+                    id="">
                         
                             Single Column
                         
@@ -240,10 +240,37 @@
     </div>
 
 </div>
+
 <div class="text-area">
-<h2>Single Column</h2>
-<p>This page is a single column page!</p>
-<p>It&rsquo;s just standard Markdown</p>
+<h2>Project Structure</h2>
+
+
+
+
+
+    
+
+
+
+
+
+    
+    <div class="row">
+        <div class="content-area">
+            <p class="boxtext"></p>
+<h4 id="base-structure">Base Structure</h4>
+<p>Take a look at the base file structure, we&rsquo;ll talk about what each folder does through this section.</p>
+<h6 id="content">Content</h6>
+<p>The <code>content</code> folder is where your content lives. The subfolders like <code>docs</code> and <code>api</code> define subroutes under the site, which will index unique sidebar menu items (we&rsquo;ll talk more about the sidebar later).</p>
+<h6 id="static">Static</h6>
+<p>The static folder is where I recommend you keep stuff like images and other non-markdown material here. The static folder&rsquo;s content is served directly under the base url. For example <code>static/image.png</code> maps to <code>http://baseurl.com/image.png</code>. This can be then referenced with markdown.</p>
+<h6 id="themesclyde">Themes/clyde</h6>
+<p>This is where clyde lives. We&rsquo;ll talk about clyde in its own section.</p>
+<p></p>
+        </div>
+        <div class="example-area">
+            <div class="example">
+        
 <nav>
 	<div class="nav nav-tabs tabs-head" role="tablist">
 
@@ -256,32 +283,8 @@
 
 		
 
-		<a class="nav-item nav-link content-tab active" id="nav-2" data-toggle="tab" href="#tab21" role="tab"
-		   aria-controls="nav-home" aria-selected="true">Python</a>
-
-		
-		
-
-		
-		
-		
-
-		
-
-		<a class="nav-item nav-link content-tab" id="nav-2" data-toggle="tab" href="#tab22" role="tab"
-		   aria-controls="nav-home" aria-selected="false">R</a>
-
-		
-		
-
-		
-		
-		
-
-		
-
-		<a class="nav-item nav-link content-tab" id="nav-2" data-toggle="tab" href="#tab23" role="tab"
-		   aria-controls="nav-home" aria-selected="false">CLI</a>
+		<a class="nav-item nav-link content-tab active" id="nav-1" data-toggle="tab" href="#tab11" role="tab"
+		   aria-controls="nav-home" aria-selected="true">File Structure</a>
 
 		
 		
@@ -289,7 +292,7 @@
 	</div>
 </nav>
 
-<div class="tab-content scroll" id="2">
+<div class="tab-content scroll" id="1">
 
 
 
@@ -299,9 +302,39 @@
 
 
 
-<div class="tab-pane fade show active" id="tab21" role="tabpanel" aria-labelledby="nav-tabName1">
+<div class="tab-pane fade show active" id="tab11" role="tabpanel" aria-labelledby="nav-tabName1">
 
-	<div class="highlight"><pre class="chroma"><code class="language-Python" data-lang="Python"><span class="k">print</span><span class="p">(</span><span class="s2">&#34;Clyde is a name!&#34;</span><span class="p">)</span>
+	<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">.
+├── archetypes
+├── content
+│   └── docs -&gt; http://baseurl.com/api
+│       ├── category -&gt; http://baseurl.com/api/subsection
+│       └── ...
+│   └── api -&gt; http://baseurl.com/api
+│       └── ...
+├── data
+├── layouts
+├── static
+└── themes
+    └── clyde
+        ├── archetypes
+        ├── layouts
+        │   ├── _default
+        │   ├── docs
+        │   ├── partials
+        │   │   └── page-layouts
+        │   └── shortcodes
+        │       └── code
+        └── static
+            ├── css
+            │   ├── page-layouts
+            │   ├── sidebar
+            │   └── tabs
+            ├── feather-icons
+            │   ├── css
+            │   ├── fonts
+            │   └── icons
+            └── js
 </code></pre></div>
 
 </div>
@@ -309,50 +342,13 @@
 
 
 
-
-
-
-
-
-<div class="tab-pane fade" id="tab22" role="tabpanel" aria-labelledby="nav-tabName2">
-
-	<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="nf">print</span><span class="p">(</span><span class="s">&#34;Clyde is a name!&#34;</span><span class="p">)</span>
-</code></pre></div>
-
 </div>
 
+</div></p>
+        </div>
+    </div>
+    
 
-
-
-
-
-
-
-
-<div class="tab-pane fade" id="tab23" role="tabpanel" aria-labelledby="nav-tabName3">
-
-	<!-- raw HTML omitted -->
-<p>Clyde dislikes commandline interfaces.</p>
-<!-- raw HTML omitted -->
-
-
-</div>
-
-
-
-
-
-</div>
-<p>Everything is just in a single column, just specify <code>layout: single-col</code> in the frontmatter.</p>
-<div class="highlight"><pre class="chroma"><code class="language-md" data-lang="md">---
-title: &#34;Single Column&#34;
-weight: 1
-draft: false
-lastmod: 2020-11-5
-type: docs
-layout: single-col
----
-</code></pre></div>
 </div>
 </div>
 

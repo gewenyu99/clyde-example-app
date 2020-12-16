@@ -1,3 +1,5 @@
+{{ $curSection := .Section}}
+{{if not (eq (len $curSection) 0)}}
 <div class="sidebar" id="sidebar-nav">
     {{ $logo:= site.Params.logo }}
     <button id="logo-collapse-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
@@ -5,21 +7,27 @@
     </button>
     <!-- renders nav items -->
     {{ template "nav_item" .}}
+    {{if site.Menus }}
+        {{- partial "footer.html" . -}}
+    {{end}}
 </div>
+{{ end }}
+
 
 {{ define "nav_item" }}
 {{ $curSection := .Section}}
 {{ $curUID := .File.UniqueID }}
 {{ $curPage := .}}
-
 <div class="card sidebar-card">
 {{ range (where .Site.Pages "Type" "category") }}
+    {{if eq $curSection .Section}}
     <div class="collapse-header">
         <a class="nav-link" href="{{.RelPermalink}}"> 
             <i class="{{ .Params.Icon }} navicon"></i>
             <h3 class="sidebar-h1 {{if eq $curUID .File.UniqueID}}nav-highlight{{end}} mainitem" 
             id="{{if eq $curUID .File.UniqueID}}scrollto{{end}}">
                 {{ .Title }}
+                
             </h3>
         </a>
     </div>
@@ -41,6 +49,7 @@
             {{ end }}                
         </div>
     </div>
+    {{ end }}
 {{ end }}
 </div>
 {{ end }}
