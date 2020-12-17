@@ -33,6 +33,19 @@ Static The static folder is where I recommend you keep stuff like images and oth
     </item>
     
     <item>
+      <title>Shortcode</title>
+      <link>http://example.org/clyde-example-app/docs/short-code/shortcode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/clyde-example-app/docs/short-code/shortcode/</guid>
+      <description>{row-divider}
+ Introduction Short codes are used as markdown inserts. They allow us to use custom rendering logic to render code blocks, floating tab windows, videos, images, and many other cool things! {divider} Quick Links  Hugo Shortcodes
+  {row-divider}
+A note about render logic Shortcode can render its inners as markdown, or plain text.
+Use this when nesting shortcode, or when you need to display markdown that doesn&amp;rsquo;t need to be rendered.</description>
+    </item>
+    
+    <item>
       <title>Single Column</title>
       <link>http://example.org/clyde-example-app/docs/layout/single/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
