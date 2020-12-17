@@ -95,5 +95,17 @@ What are sections? Each subfolder under content is a section, for example: conte
 content └── docs ├── folder-structure │ ├── _index.md │ ├── project-structure.md │ └── section-structure.md ├── layout │ ├── _index.md │ ├── single.md │ └── two-col.md ├── quick-start │ ├── _index.md │ ├── config.</description>
     </item>
     
+    <item>
+      <title>Tabs</title>
+      <link>http://example.org/clyde-example-app/docs/short-code/tabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/clyde-example-app/docs/short-code/tabs/</guid>
+      <description>{row-divider}
+Tabs You&amp;rsquo;ve seen these things, they&amp;rsquo;re the centerpiece of Clyde&amp;rsquo;s aesthetics.
+The following example is derived from GA4GH Discovery Docs, which is written using Clyde. {divider}  Example #1 Example #2   This query returns all female patients from the patient table.
+/* you can scroll on this tab */ SELECT * FROM kidsfirst.ga4gh_tables.patient WHERE Json_extract_scalar(patient, &amp;#39;$.gender&amp;#39;) = &amp;#39;female&amp;#39; LIMIT 5;   This query returns all conditions observed in female patients from the patient table.</description>
+    </item>
+    
   </channel>
 </rss>
