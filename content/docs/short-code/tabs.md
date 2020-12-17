@@ -1,7 +1,7 @@
 ---
 title: "Tabs"
 weight: 2
-draft: true
+draft: false
 lastmod: 2020-11-5
 type: docs
 layout: two-col
