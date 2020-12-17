@@ -7,7 +7,8 @@ type: docs
 layout: two-col
 ---
 {row-divider}
-Before we begin, install Hugo on your system. => [Hugo Documentation](https://gohugo.io/getting-started/installing/)
+Before we begin, install Hugo on your system.
+[Hugo Documentation](https://gohugo.io/getting-started/installing/)
 {divider}
 {row-divider}
 #### Initialize your repo
@@ -19,7 +20,7 @@ Then, we can add the Clyde theme.
 hugo new site example-site
 cd example-site
 git init
-git submodule add https://github.com/gewenyu99/clyde.git themes/clyde
+git submodule add https://github.com/DNAstack/clyde.git themes/clyde
 ```
 {row-divider}
 #### Configure your Hugo site to use Clyde
