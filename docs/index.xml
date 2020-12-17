@@ -12,10 +12,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/clyde-example-app/docs/quick-start/init/</guid>
-      <description>{row-divider} Before we begin, install Hugo on your system. =&amp;gt; Hugo Documentation {divider} {row-divider}
+      <description>{row-divider} Before we begin, install Hugo on your system. Hugo Documentation {divider} {row-divider}
 Initialize your repo Create a new Hugo site and initialize it as a git repo.
 Then, we can add the Clyde theme. {divider}
-hugo new site example-site cd example-site git init git submodule add https://github.com/gewenyu99/clyde.git themes/clyde {row-divider}
+hugo new site example-site cd example-site git init git submodule add https://github.com/DNAstack/clyde.git themes/clyde {row-divider}
 Configure your Hugo site to use Clyde Copy the toml config on the right into your config.toml file.
 We&amp;rsquo;ll cover the details of configuring your site in another section.</description>
     </item>
