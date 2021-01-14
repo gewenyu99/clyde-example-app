@@ -23,7 +23,9 @@
 .h-div.search{
     margin: 0px 0px;
 }
-
+.top-nav-text{
+    margin: 0px 0px 0px 4px; 
+}
 #search-input-modal{
     padding: 0px;
     margin: 0px;
