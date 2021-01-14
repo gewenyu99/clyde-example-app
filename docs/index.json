@@ -16,7 +16,7 @@
     
     , 
     {
-        "url": "/docs/quick-start/index.json",
+        "url": "/docs/quick-start/",
         "title": "Quick Start",
         "content": ""
     }
@@ -51,14 +51,14 @@
     
     , 
     {
-        "url": "/docs/folder-structure/index.json",
+        "url": "/docs/folder-structure/",
         "title": "Folder Structure",
         "content": ""
     }
     
     , 
     {
-        "url": "/docs/layout/index.json",
+        "url": "/docs/layout/",
         "title": "Page Layout",
         "content": ""
     }
@@ -79,7 +79,7 @@
     
     , 
     {
-        "url": "/docs/short-code/index.json",
+        "url": "/docs/short-code/",
         "title": "Shortcode",
         "content": ""
     }
@@ -100,7 +100,7 @@
     
     , 
     {
-        "url": "/docs/index.json",
+        "url": "/docs/",
         "title": "Docs",
         "content": ""
     }
