@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/quick-start/init/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/folder-structure/project-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/quick-start/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/short-code/shortcode/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/layout/single/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/layout/two-col/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/quick-start/config/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/folder-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/layout/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/folder-structure/section-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/short-code/tabs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/short-code/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/clyde-example-app/tags/</loc>
+  </url>
+  
+</urlset>
