@@ -40,10 +40,10 @@ canonifyURLs = true
 
     logo = "/default_button.png"
 
-    home = "/quick-start"
+    home = "/docs/"
 [outputs]
-    section = ["JSON", "HTML"]
-    home = ["JSON"]
+    section = ["HTML"]
+    home = ["JSON", "HTML"]
 
 [menu]
     [[menu.main]]
