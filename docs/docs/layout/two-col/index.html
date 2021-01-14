@@ -197,7 +197,7 @@
                     <h3 class="sidebar-h2  subitem" 
                     id="">
                         
-                            Shortcode
+                            The Basics
                         
                     </h3>
                 </a>
@@ -431,7 +431,7 @@ function renderSearchResults(results){
         
             
             var article = document.createElement('article')
-            var uri = result.ref.replace("/index.json","")
+            var uri = "/clyde-example-app" + result.ref.replace("/index.json","")
             article.innerHTML = `
             <a href="${uri}" class="search-result-item"><p class="search-result-title">${documents[result.ref].title}</p> <i class="icon-external-link"></i></a>
             `

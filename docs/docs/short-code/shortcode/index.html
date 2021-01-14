@@ -45,7 +45,7 @@
         }
     </style>
     
-    <title>Clyde Sample App | Shortcode</title>
+    <title>Clyde Sample App | The Basics</title>
 </head><body>
 
 <div class="sidebar" id="sidebar-nav">
@@ -197,7 +197,7 @@
                     <h3 class="sidebar-h2 nav-highlight subitem" 
                     id="scrollto">
                         
-                            Shortcode
+                            The Basics
                         
                     </h3>
                 </a>
@@ -265,7 +265,7 @@
 </div>
 
 <div class="text-area">
-<h2>Shortcode</h2>
+<h2>The Basics</h2>
 
 
 
@@ -442,7 +442,7 @@ function renderSearchResults(results){
         
             
             var article = document.createElement('article')
-            var uri = result.ref.replace("/index.json","")
+            var uri = "/clyde-example-app" + result.ref.replace("/index.json","")
             article.innerHTML = `
             <a href="${uri}" class="search-result-item"><p class="search-result-title">${documents[result.ref].title}</p> <i class="icon-external-link"></i></a>
             `

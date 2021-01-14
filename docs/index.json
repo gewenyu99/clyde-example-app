@@ -23,16 +23,16 @@
     
     , 
     {
-        "url": "/docs/short-code/shortcode/",
-        "title": "Shortcode",
-        "content": "{row-divider}\n Introduction Short codes are used as markdown inserts. They allow us to use custom rendering logic to render code blocks, floating tab windows, videos, images, and many other cool things! {divider} Quick Links  Hugo Shortcodes\n  {row-divider}\nA note about render logic Shortcode can render its inners as markdown, or plain text.\nUse this when nesting shortcode, or when you need to display markdown that doesn\u0026rsquo;t need to be rendered. {divider}  Not Rendered Rendered   this isn't rendered ``` SQL /* you can scroll on this tab */ SELECT * FROM kidsfirst.ga4gh_tables.patient WHERE Json_extract_scalar(patient, '$.gender') = 'female' LIMIT 5; ```  This is rendered\n/* you can scroll on this tab */ SELECT Json_extract_scalar(ncpi_disease, \u0026#39;$.code.text\u0026#39;) AS disease, Json_extract_scalar(ncpi_disease, \u0026#39;$.identifier[0].value\u0026#39;) AS identifier FROM kidsfirst.ga4gh_tables.ncpi_disease disease INNER JOIN kidsfirst.ga4gh_tables.patient patient ON patient.id = REPLACE(Json_extract_scalar(ncpi_disease, \u0026#39;$.subject.reference\u0026#39;), \u0026#39;Patient/\u0026#39;) WHERE Json_extract_scalar(patient, \u0026#39;$.gender\u0026#39;) = \u0026#39;female\u0026#39; LIMIT 5;    \n"
+        "url": "/docs/layout/single/",
+        "title": "Single Column",
+        "content": "This page is a single column page!\nIt\u0026rsquo;s just standard Markdown\n Python R CLI   print(\u0026#34;Clyde is a name!\u0026#34;)   print(\u0026#34;Clyde is a name!\u0026#34;)   Clyde dislikes commandline interfaces.\n  Everything is just in a single column, just specify layout: single-col in the frontmatter.\n--- title: \u0026#34;Single Column\u0026#34; weight: 1 draft: false lastmod: 2020-11-5 type: docs layout: single-col --- "
     }
     
     , 
     {
-        "url": "/docs/layout/single/",
-        "title": "Single Column",
-        "content": "This page is a single column page!\nIt\u0026rsquo;s just standard Markdown\n Python R CLI   print(\u0026#34;Clyde is a name!\u0026#34;)   print(\u0026#34;Clyde is a name!\u0026#34;)   Clyde dislikes commandline interfaces.\n  Everything is just in a single column, just specify layout: single-col in the frontmatter.\n--- title: \u0026#34;Single Column\u0026#34; weight: 1 draft: false lastmod: 2020-11-5 type: docs layout: single-col --- "
+        "url": "/docs/short-code/shortcode/",
+        "title": "The Basics",
+        "content": "{row-divider}\n Introduction Short codes are used as markdown inserts. They allow us to use custom rendering logic to render code blocks, floating tab windows, videos, images, and many other cool things! {divider} Quick Links  Hugo Shortcodes\n  {row-divider}\nA note about render logic Shortcode can render its inners as markdown, or plain text.\nUse this when nesting shortcode, or when you need to display markdown that doesn\u0026rsquo;t need to be rendered. {divider}  Not Rendered Rendered   this isn't rendered ``` SQL /* you can scroll on this tab */ SELECT * FROM kidsfirst.ga4gh_tables.patient WHERE Json_extract_scalar(patient, '$.gender') = 'female' LIMIT 5; ```  This is rendered\n/* you can scroll on this tab */ SELECT Json_extract_scalar(ncpi_disease, \u0026#39;$.code.text\u0026#39;) AS disease, Json_extract_scalar(ncpi_disease, \u0026#39;$.identifier[0].value\u0026#39;) AS identifier FROM kidsfirst.ga4gh_tables.ncpi_disease disease INNER JOIN kidsfirst.ga4gh_tables.patient patient ON patient.id = REPLACE(Json_extract_scalar(ncpi_disease, \u0026#39;$.subject.reference\u0026#39;), \u0026#39;Patient/\u0026#39;) WHERE Json_extract_scalar(patient, \u0026#39;$.gender\u0026#39;) = \u0026#39;female\u0026#39; LIMIT 5;    \n"
     }
     
     , 

@@ -1,5 +1,5 @@
 ---
-title: "Shortcode"
+title: "The Basics"
 weight: 1
 draft: false
 lastmod: 2020-11-5
