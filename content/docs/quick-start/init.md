@@ -76,6 +76,7 @@ canonifyURLs = true
     
 [outputs]
     section = ["JSON", "HTML"]
+    home = ["JSON"]
 ```
 {{% /tab %}}
 {{< /tabs >}}

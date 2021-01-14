@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/tabs/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="../../override/style.css">
+    <link rel="stylesheet" type="text/css" href="../../override/style.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet"
@@ -60,7 +60,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/tabs/style.css">
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="../../override/style.css">
+    <link rel="stylesheet" type="text/css" href="../../override/style.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet"
@@ -281,7 +281,7 @@
 
 <div class="content" id="content"><div class="content-header">
     <div id="search-input-div">
-        <button class="search-button" id="search-button" data-toggle="modal" data-target="#search-input-modal" onclick='setFocusToTextBox()'>
+        <button class="search-button" id="search-button" data-toggle="modal" data-target="#search-input-modal">
             <h3 class="search-button-text">
                 <i class="icon-search search-icon"></i>
                 Find anything
@@ -543,7 +543,7 @@ window.onload = function() {
     searchResults = document.getElementById('search-results')
 
     
-    fetch('/index.json', {
+    fetch('/clyde-example-app/index.json', {
         method: 'get'
     }).then(
         res => res.json()
@@ -659,7 +659,7 @@ window.onload = function() {
     searchResults = document.getElementById('search-results')
 
     
-    fetch('/index.json', {
+    fetch('/clyde-example-app/index.json', {
         method: 'get'
     }).then(
         res => res.json()

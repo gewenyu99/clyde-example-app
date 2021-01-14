@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../css/tabs/style.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="../override/style.css">
+    <link rel="stylesheet" type="text/css" href="../override/style.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet"
@@ -129,7 +129,7 @@ window.onload = function() {
     searchResults = document.getElementById('search-results')
 
     
-    fetch('/index.json', {
+    fetch('/clyde-example-app/index.json', {
         method: 'get'
     }).then(
         res => res.json()
