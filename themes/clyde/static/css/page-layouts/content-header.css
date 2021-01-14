@@ -223,4 +223,28 @@
     .showing-nav .content-header{
         width: calc(100vw - 225px);
     }
+
 }
+@media (max-width: 900px) {
+    .content-header-nav{
+        display: none;
+    }
+    #search-input-modal{
+        margin: 0px;
+    }
+    #search-input-div {
+        left: 0px;
+        width: 100vw;
+    }
+    #search-input {
+        width: 100vw;
+        left: 0px;
+    }
+    #search-results{
+        width: 100vw
+    }
+    .content-header{
+        padding: 12px 32px 12px 70px;
+    }
+}
+

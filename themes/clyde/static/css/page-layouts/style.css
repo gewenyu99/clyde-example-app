@@ -166,3 +166,24 @@
         width: 100%;
     }
 }
+
+@media (max-width: 900px) {
+    .showing-nav.content {
+        display: none;
+    }
+    .text-area{
+        padding: 16px 32px;
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .example-area {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .content{
+        width: 100vw;
+    }
+}

@@ -11,6 +11,9 @@
         {{- partial "footer.html" . -}}
     {{end}}
 </div>
+<button id="sidebar-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
+    <i class="icon-menu mobile"></i>
+</button>
 {{ end }}
 
 

@@ -56,6 +56,10 @@
     height: inherit;
 }
 
+#sidebar-btn {
+    display: none;
+}
+
 .navicon {
     font-size: 22px;
     margin-right: 16px;
@@ -151,6 +155,7 @@
 }
 
 @media (max-width: 1400px) {
+
     /* CSS that should be displayed if width is equal to or less than 1000px goes here */
     .sidebar .sidebar-h1{
         display: none;
@@ -201,5 +206,41 @@
     }
     .sidebar.show{
         width: 225px;
+    }
+}
+
+@media (max-width: 900px) {
+    .sidebar{
+        display: none;
+    }
+    .sidebar.show{
+        display: flex;
+        width: 100vw;
+    }
+    .content-header{
+        width: 100vw;
+    }
+
+    .icon-menu.mobile{
+        font-size: 32px;
+    }
+
+    #logo-collapse-btn{
+        visibility: hidden;
+    }
+    #sidebar-btn {
+        display: unset;
+        position: fixed;
+        z-index: 2;
+        top: 16px;
+        left: 12px;
+        width: 32px;
+        height: 32px;
+        border: 0px;
+        border-radius: 16px;
+        background-color: transparent;
+    }
+    #sidebar-btn:focus {
+        outline: none;
     }
 }
