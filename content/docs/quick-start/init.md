@@ -75,8 +75,8 @@ canonifyURLs = true
     home = "/quick-start"
     
 [outputs]
-    section = ["JSON", "HTML"]
-    home = ["JSON"]
+    section = ["HTML"]
+    home = ["JSON", "HTML"]
 ```
 {{% /tab %}}
 {{< /tabs >}}
