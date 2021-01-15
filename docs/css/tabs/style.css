@@ -46,6 +46,7 @@ nav{
   border-radius: inherit;
   background-color: var(--grey200);
   margin: 1px 0px;
+  min-height: 75px;
 }
 .tab-content>.tab-pane{
   border-radius: 0px;
