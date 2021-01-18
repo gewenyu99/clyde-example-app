@@ -9,7 +9,11 @@
     <div class="footer-nav">
         {{ range .Site.Menus.main }}
         <a class="content-header-nav-link" href="{{ .URL }}">
-            {{ .Pre }} 
+            {{if .Pre}}
+                {{.Pre}}
+            {{else}}
+                {{.Name}}
+            {{end}} 
         </a>
         {{ end }}
     </div>

@@ -11,9 +11,11 @@
     <!-- user override for anything not included here -->
     <link rel="stylesheet" type="text/css" href="/override/style.css">
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Lato">
+          href="https://fonts.googleapis.com/css?family={{ .Site.Params.body_font }}">
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Source Code Pro">
+          href="https://fonts.googleapis.com/css?family={{ .Site.Params.heading_font }}">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family={{ .Site.Params.code_font }}">
 
     {{ "<!-- feather-icon -->" | safeHTML }}
     <link rel="stylesheet" href="/feather-icons/css/iconfont.css">
@@ -41,6 +43,9 @@
             --grey900: {{ .Site.Params.grey900 }};
             --grey-head: {{ .Site.Params.grey_head }};
             --nav-highlight: {{ .Site.Params.nav_highlight }};
+            --body-font: {{ .Site.Params.body_font }};
+            --heading-font: {{ .Site.Params.heading_font }};
+            --code-font: {{ .Site.Params.code_font }};
         }
     </style>
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}

@@ -10,7 +10,7 @@ body{
 }
 
 h1 {
-    font-family: Lato;
+    font-family: var(--heading-font);
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-    font-family: Lato;
+    font-family: var(--heading-font);
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -32,7 +32,7 @@ h2 {
     }
 
 h3 {
-    font-family: Lato !important;
+    font-family: var(--heading-font) !important;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -42,7 +42,7 @@ h3 {
 }
 
 h4 {
-    font-family: Lato;
+    font-family: var(--heading-font);
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -52,7 +52,7 @@ h4 {
 }
 
 p {
-    font-family: Lato;
+    font-family: var(--body-font);
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -61,7 +61,7 @@ p {
 }
 
 li {
-    font-family: Lato;
+    font-family: var(--body-font);
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
