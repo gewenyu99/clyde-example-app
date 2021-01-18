@@ -10,11 +10,11 @@ layout: two-col
 #### Base Structure
 Take a look at the base file structure, we'll talk about what each folder does through this section.
 ###### Content
-The `content` folder is where your content lives. The subfolders like `docs` and `api` define subroutes under the site, which will index unique sidebar menu items (we'll talk more about the sidebar later).
+The `content` folder is where your content lives. The sub-folders like `docs` and `api` define routes under the site, which will index unique sidebar menu items (we'll talk more about the sidebar later).
 ###### Static
-The static folder is where I recommend you keep stuff like images and other non-markdown material here. The static folder's content is served directly under the base url. For example `static/image.png` maps to `http://baseurl.com/image.png`. This can be then referenced with markdown.
+The static folder is where I recommend you keep stuff like images and other non-markdown material here. The static folder's content is served directly under the base url. For example `static/image.png` maps to `http://baseurl.com/image.png`. An example of this can be found here: [/default_button.png](/default_button.png).
 ###### Themes/clyde
-This is where clyde lives. We'll talk about clyde in its own section.
+This is where Clyde lives. We'll talk about contributing to Clyde in its own section.
 
 {divider}
 {{<code/float-window>}}
@@ -24,8 +24,8 @@ This is where clyde lives. We'll talk about clyde in its own section.
 .
 ├── archetypes
 ├── content
-│   └── docs -> http://baseurl.com/api
-│       ├── category -> http://baseurl.com/api/subsection
+│   └── docs -> http://baseurl.com/docs
+│       ├── category -> http://baseurl.com/docs/subsection
 │       └── ...
 │   └── api -> http://baseurl.com/api
 │       └── ...
