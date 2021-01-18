@@ -41,6 +41,10 @@ canonifyURLs = true
     logo = "/default_button.png"
 
     home = "/docs/"
+
+    heading_font = "Poppins"
+    body_font = "Roboto"
+    code_font = "Source Code Pro"
 [outputs]
     section = ["HTML"]
     home = ["JSON", "HTML"]
