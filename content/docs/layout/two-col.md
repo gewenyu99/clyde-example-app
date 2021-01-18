@@ -23,7 +23,10 @@ If Clyde feels the window is to narrow, it will wrap the page responsively into 
 
 
 {{< figure src="/default_button.png" title="Rules are rules man - Clyde 2020" width="500rem">}}
+
 {divider}
+Check this page's source code for an example of how to use a two column layout.
+
 {{< tabs tabTotal="3" tabID="2" tabName1="Python" tabName2="R" tabName3="CLI">}}
 {{% tab tabNum="1" %}}
 ``` Python
