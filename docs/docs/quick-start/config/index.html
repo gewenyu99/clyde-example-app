@@ -281,12 +281,12 @@
     
     <div class="row">
         <div class="content-area">
-            <p class="boxtext"></p>
+            <p class="boxtext">This page will cover the basics of configuring Clyde.</p>
 <h4 id="base-url">Base URL</h4>
 <p>The base URL has 2 components.</p>
 <ol>
 <li><code>http://example.org/</code> is a generic domain place holder, this shows Hugo where the base domain begins and ends</li>
-<li><code>clyde-example-app/</code> this is where you specify the root route of your app. All relative urls will resolve to <code>clyde-example-app/&lt;hugo routing&gt;/...</code></p>
+<li><code>clyde-example-app/</code> this is where you specify the root route of your app. All relative urls will resolve to <code>clyde-example-app/&lt;hugo routing&gt;/...</code>. This is used when deploying to Github pages.</p>
         </div>
         <div class="example-area">
             </li>
@@ -305,11 +305,36 @@
     <div class="row">
         <div class="content-area">
             <p class="boxtext"></p>
-<h4 id="color-pallet">Color pallet</h4>
-<p>Clyde is themable, you can make clyde match the color scheme of your projects easily. These parameters can be modified under <code>config.toml</code></p>
+<h4 id="basic-information">Basic Information</h4>
+<p><code>title</code> specifies the displayed name of your site</p>
+<p><code>theme</code> specifies theme used, which is <code>clyde</code> in this case.</p>
+<p><code>pygmentsUseClasses</code> allows us to customize code highlight colors</p>
+<p><code>publishDir</code> specifies which folder into which Clyde compiles the built site.</p>
+<p><code>relativeURLs</code> and <code>canonifyURLs</code> are specified to make Clyde&rsquo;s sidebar menu work properly. Don&rsquo;t worry about these, keep them on <code>true</code>.</p>
         </div>
         <div class="example-area">
             </p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Clyde Sample App&#34;</span>
+<span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;clyde&#34;</span>
+<span class="nx">pygmentsUseClasses</span><span class="p">=</span><span class="kc">true</span>
+<span class="nx">publishDir</span> <span class="p">=</span> <span class="s2">&#34;docs&#34;</span>
+<span class="nx">relativeURLs</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">canonifyURLs</span> <span class="p">=</span> <span class="kc">true</span>
+</code></pre></div><p>
+        </div>
+    </div>
+    
+
+
+
+
+
+    
+    <div class="row">
+        <div class="content-area">
+            <p class="boxtext"></p>
+<h4 id="color-pallet">Color pallet</h4>
+<p>Clyde is themable, you can make clyde match the color scheme of your projects easily. These parameters can be modified under <code>config.toml</code>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
     <span class="c">#colors</span>
     <span class="nx">secondary</span> <span class="p">=</span> <span class="s2">&#34;#1E1F21&#34;</span>
@@ -320,6 +345,29 @@
     <span class="nx">grey200</span> <span class="p">=</span> <span class="s2">&#34;#F9F9FA&#34;</span>
     <span class="nx">grey600</span> <span class="p">=</span> <span class="s2">&#34;#969DAC&#34;</span>
     <span class="nx">grey_head</span><span class="p">=</span> <span class="s2">&#34;#EFEFF3&#34;</span>
+</code></pre></div><p></p>
+        </div>
+        <div class="example-area">
+            </p>
+<div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">// These are the defined colors available for configuration
+</span><span class="c1">// Not all are used by default, but you can use these for custom theming of Clyde components.
+</span><span class="c1"></span><span class="nt">--white</span><span class="nd">:</span> <span class="nn">#ffffff</span><span class="p">;</span>
+<span class="nt">--primary</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.primary</span> <span class="p">}};</span>
+<span class="nt">--secondary</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.secondary</span> <span class="p">}};</span>
+<span class="nt">--sidebar-bg</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.sidebar_bg</span> <span class="p">}};</span>
+<span class="nt">--sidebar-primary</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.sidebar_primary</span> <span class="p">}};</span>
+<span class="nt">--accent</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.accent</span> <span class="p">}};</span>
+<span class="nt">--grey100</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.grey100</span> <span class="p">}};</span>
+<span class="nt">--grey200</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.grey200</span> <span class="p">}};</span>
+<span class="nt">--grey300</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.grey300</span> <span class="p">}};</span>
+<span class="nt">--grey400</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.grey400</span> <span class="p">}};</span>
+<span class="nt">--grey500</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.grey500</span> <span class="p">}};</span>
+<span class="nt">--grey600</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.grey600</span> <span class="p">}};</span>
+<span class="nt">--grey700</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.grey700</span> <span class="p">}};</span>
+<span class="nt">--grey800</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.grey800</span> <span class="p">}};</span>
+<span class="nt">--grey900</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.grey900</span> <span class="p">}};</span>
+<span class="nt">--grey-head</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.grey_head</span> <span class="p">}};</span>
+<span class="nt">--nav-highlight</span><span class="nd">:</span> <span class="p">{{</span> <span class="nc">.Site.Params.nav_highlight</span> <span class="p">}};</span>
 </code></pre></div><p>
         </div>
     </div>
@@ -335,7 +383,7 @@
             <p class="boxtext"></p>
 <h4 id="logos">Logos</h4>
 <p>Clyde allows you to use square logos for your site. It will appear on the top of the sidebar menu, when the menu auto collapses, you can reopen it using the logo as a button.</p>
-<p>You can also just use a red circle provided by Clyde, it&rsquo;s not very pretty though.</p>
+<p>You can also just use Clyde&rsquo;s default icon, it&rsquo;s not very pretty though.</p>
         </div>
         <div class="example-area">
             </p>

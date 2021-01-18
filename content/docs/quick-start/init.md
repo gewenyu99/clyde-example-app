@@ -8,7 +8,10 @@ layout: two-col
 ---
 {row-divider}
 Before we begin, install Hugo on your system.
+
 [Hugo Documentation](https://gohugo.io/getting-started/installing/)
+
+You'll also need git for source control and an IDE you're comfortable with. Clyde was written with Visual Studio Code.
 {divider}
 {row-divider}
 #### Initialize your repo
@@ -32,9 +35,9 @@ We'll cover the details of configuring your site in another section.
 {{< tabs tabTotal="1" tabID="1" tabName1="config.toml">}}
 {{% tab tabNum="1" %}}
 ``` toml
-baseURL = "http://example.org/"
+baseURL = "http://example.org/clyde-example-app/"
 languageCode = "en-us"
-title = "Example Application"
+title = "Clyde Sample App"
 theme = "clyde"
 pygmentsUseClasses=true
 publishDir = "docs"
@@ -69,14 +72,33 @@ canonifyURLs = true
     primary = "#fff"
     accent = "#e3413a"
     grey200 = "#F9F9FA"
-    grey600 = "#969DAC"
+    grey600 = "#1E1F21"
     grey_head= "#EFEFF3"
+
     logo = "/default_button.png"
-    home = "/quick-start"
-    
+
+    home = "/docs/"
+
+    heading_font = "Poppins"
+    body_font = "Roboto"
+    code_font = "Source Code Pro"
 [outputs]
     section = ["HTML"]
     home = ["JSON", "HTML"]
+
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        pre = "<i class='icon-home'></i>"
+        name = "Home"
+        url = "/"
+        weight = -999
+    [[menu.main]]
+        identifier = "git"
+        pre = "<i class='icon-github'></i>"
+        name = "Github"
+        url = "https://github.com/gewenyu99/clyde-example-app"
+        weight = 1
 ```
 {{% /tab %}}
 {{< /tabs >}}
@@ -87,16 +109,16 @@ Hugo renders Markdown content from the `content` folder.
 
 Clyde renders its primary documentation style content from the `content/docs` folder. You can still use other folders to render custom static html content.
 
-`content/docs/first-category/_index.md` specifies the way the category menu will be rendered, it's an empty markdown file with frontmatter to configure the application. In fact, Clyde will render a menu for any markdown file with a `type : "category"` in the frontmatter.
+Take the example: `content/docs/quick-start/_index.md`. The file `_index.md` specifies the way the category menu will be rendered, it's an empty markdown file with frontmatter to configure the application. In fact, Clyde will render a menu for any markdown file with a `type : "category"` in the frontmatter.
 
-`content/docs/first-category/content.md` is a document under the _index.md first category file. It uses a single column layouts, more on layouts later.
+`content/docs/quick-start/init.md` (this page) is a document under the _index.md quick-start category file. It uses a two column layouts, more on layouts [here](/docs/layout/).
 {divider}
 {{<code/float-window>}}
-{{< tabs tabTotal="2" tabID="2" tabName1="content/docs/first-category/_index.md" tabName2="content/docs/first-category/content.md">}}
+{{< tabs tabTotal="2" tabID="2" tabName1="_index.md" tabName2="quickstart.md">}}
 {{% tab tabNum="1" %}}
 ``` md
 ---
-title: "First Category"
+title: "Quick Start"
 icon: "icon-layers"
 type : "category"
 weight: 1
@@ -107,15 +129,15 @@ weight: 1
 {{% tab tabNum="2" %}}
 ``` md
 ---
-title: "Doc"
-weight: 2
+title: "Initialize Hugo"
+weight: 1
 draft: false
 lastmod: 2020-11-5
 type: docs
-layout: single-col
+layout: two-col
 ---
 
-#### Hi!
+...
 ```
 {{% /tab %}}
 {{< /tabs >}}

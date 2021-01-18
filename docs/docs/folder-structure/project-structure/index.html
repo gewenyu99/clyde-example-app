@@ -285,11 +285,11 @@
 <h4 id="base-structure">Base Structure</h4>
 <p>Take a look at the base file structure, we&rsquo;ll talk about what each folder does through this section.</p>
 <h6 id="content">Content</h6>
-<p>The <code>content</code> folder is where your content lives. The subfolders like <code>docs</code> and <code>api</code> define subroutes under the site, which will index unique sidebar menu items (we&rsquo;ll talk more about the sidebar later).</p>
+<p>The <code>content</code> folder is where your content lives. The sub-folders like <code>docs</code> and <code>api</code> define routes under the site, which will index unique sidebar menu items (we&rsquo;ll talk more about the sidebar later).</p>
 <h6 id="static">Static</h6>
-<p>The static folder is where I recommend you keep stuff like images and other non-markdown material here. The static folder&rsquo;s content is served directly under the base url. For example <code>static/image.png</code> maps to <code>http://baseurl.com/image.png</code>. This can be then referenced with markdown.</p>
+<p>The static folder is where I recommend you keep stuff like images and other non-markdown material here. The static folder&rsquo;s content is served directly under the base url. For example <code>static/image.png</code> maps to <code>http://baseurl.com/image.png</code>. An example of this can be found here: <a href="../../../default_button.png">/default_button.png</a>.</p>
 <h6 id="themesclyde">Themes/clyde</h6>
-<p>This is where clyde lives. We&rsquo;ll talk about clyde in its own section.</p>
+<p>This is where Clyde lives. We&rsquo;ll talk about contributing to Clyde in its own section.</p>
 <p></p>
         </div>
         <div class="example-area">
@@ -331,8 +331,8 @@
 	<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">.
 ├── archetypes
 ├── content
-│   └── docs -&gt; http://baseurl.com/api
-│       ├── category -&gt; http://baseurl.com/api/subsection
+│   └── docs -&gt; http://baseurl.com/docs
+│       ├── category -&gt; http://baseurl.com/docs/subsection
 │       └── ...
 │   └── api -&gt; http://baseurl.com/api
 │       └── ...

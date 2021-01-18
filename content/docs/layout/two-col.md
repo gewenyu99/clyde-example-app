@@ -19,11 +19,10 @@ Clyde will only display content that is properly formatted like this.
 
 If Clyde feels the window is to narrow, it will wrap the page responsively into a single column.
 
-***Check the source code of this page to see the details. Clyde is a man of habbit, he will render the divider tags if I include them in this page.***
+***You must always have both divider tags for a section, nay a page to render correctly, even if they're empty. Clyde is a man of habbit, he will only render if you include them.***
 
 
 {{< figure src="/default_button.png" title="Rules are rules man - Clyde 2020" width="500rem">}}
-
 {divider}
 {{< tabs tabTotal="3" tabID="2" tabName1="Python" tabName2="R" tabName3="CLI">}}
 {{% tab tabNum="1" %}}
