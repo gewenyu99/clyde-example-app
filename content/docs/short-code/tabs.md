@@ -47,7 +47,7 @@ LIMIT  5;
 #### Using tabs
 A few key details to note
 - `tabTotal` defines number of tabs defined
-- `tabID` should be unique for the page, this is the reference to trigger navigation switching
+- `tabID` should be **unique** for the page, this is the reference to trigger navigation switching
 - `tabName1` through `tabNameX` are the names displayed on the navigation buttons
 - The inner tags should use `% %` tag over `< >` to render inner markdown properly
 - `tabNum="X"` should match its tab name number
