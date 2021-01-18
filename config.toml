@@ -1,6 +1,6 @@
 baseURL = "http://example.org/clyde-example-app/"
 languageCode = "en-us"
-title = "Clyde Sample App"
+title = "Clyde's Guide"
 theme = "clyde"
 pygmentsUseClasses=true
 publishDir = "docs"
@@ -45,6 +45,8 @@ canonifyURLs = true
     heading_font = "Poppins"
     body_font = "Roboto"
     code_font = "Source Code Pro"
+
+    show_title = true
 [outputs]
     section = ["HTML"]
     home = ["JSON", "HTML"]

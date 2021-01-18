@@ -4,9 +4,16 @@
     {{ $logo:= site.Params.logo }}
     <button id="logo-collapse-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
         <img id="logo" src="{{ $logo }}" alt="{{ site.Title }}"> 
+        {{if site.Params.show_title}}
+        <div class="site-title">
+            <h3 class="sidebar-h1 "> 
+                {{.Site.Title}}  
+            </h3>
+        </div>
+        {{end}}
     </button>
     <!-- renders nav items -->
-    {{ template "nav_item" .}}
+    {{ template "nav_item" .}} 
     {{if site.Menus }}
         {{- partial "footer.html" . -}}
     {{end}}
