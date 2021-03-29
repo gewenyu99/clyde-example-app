@@ -14,6 +14,7 @@
     </button>
     <!-- renders nav items -->
     {{ template "nav_item" .}} 
+    {{if site.Params.show_support}}
     <div class="collapse-header">
         <a class="nav-link" href="/{{.Section}}/support/"> 
             <i class="icon-help-circle navicon"></i>
@@ -22,6 +23,7 @@
             </h3>
         </a>
     </div>
+    {{end}}
 </div>
 <button id="sidebar-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
     <i class="icon-menu mobile"></i>

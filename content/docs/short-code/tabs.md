@@ -10,7 +10,7 @@ layout: two-col
 #### Tabs
 You've seen these things, they're the centerpiece of Clyde's aesthetics. 
 
-The following example is derived from [GA4GH Discovery Docs](https://github.com/ga4gh-discovery/ga4gh-search/), which is written using Clyde.
+The following example is derived from [GA4GH Search Docs](https://ga4gh-discovery.github.io/ga4gh-search/), which is written using Clyde.
 {divider}
 {{<code/float-window>}}
 {{< tabs tabTotal="2" tabID="float" tabName1="Example #1" tabName2="Example #2">}}
@@ -53,6 +53,8 @@ A few key details to note
 - `tabNum="X"` should match its tab name number
 
 {divider}
+{{%code/code-block%}}
+
 ``` markdown
 {{</* tabs tabTotal="2" tabID="float2" tabName1="Example #1" tabName2="Example #2" */>}}
 {{%/* tab tabNum="1" */%}}
@@ -64,3 +66,5 @@ A few key details to note
 {{%/* /tab */%}}
 {{</* /tabs */>}}
 ```
+
+{{%/code/code-block%}}

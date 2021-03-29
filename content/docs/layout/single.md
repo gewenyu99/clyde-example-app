@@ -31,6 +31,7 @@ Clyde dislikes commandline interfaces.
 
 Everything is just in a single column, just specify `layout: single-col` in the frontmatter.
 
+{{%code/code-block%}}
 ``` md
 ---
 title: "Single Column"
@@ -41,3 +42,4 @@ type: docs
 layout: single-col
 ---
 ```
+{{%/code/code-block%}}
