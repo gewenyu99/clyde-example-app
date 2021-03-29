@@ -7,11 +7,14 @@ type: docs
 layout: two-col
 ---
 {row-divider}
-Before we begin, install Hugo on your system.
+
+{{< load-photoswipe >}} 
+
+Before we begin, install `Hugo` on your system.
 
 [Hugo Documentation](https://gohugo.io/getting-started/installing/)
 
-You'll also need git for source control and an IDE you're comfortable with. Clyde was written with Visual Studio Code.
+You'll also need `git` for source control and an IDE you're comfortable with. Clyde was written with `Visual Studio Code`.
 {divider}
 {row-divider}
 #### Initialize your repo
@@ -19,12 +22,15 @@ Create a new Hugo site and initialize it as a git repo.
 
 Then, we can add the Clyde theme.
 {divider}
-``` bash
+{{%code/code-block%}}
+``` bash {linenos=table}
 hugo new site example-site
 cd example-site
 git init
 git submodule add https://github.com/DNAstack/clyde.git themes/clyde
 ```
+{{%/code/code-block%}}
+
 {row-divider}
 #### Configure your Hugo site to use Clyde
 Copy the toml config on the right into your `config.toml` file.
@@ -61,7 +67,7 @@ canonifyURLs = true
       autoHeadingIDType = "github"
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = false
+      unsafe = true
       xhtml = false
       
 [params]
@@ -146,7 +152,13 @@ layout: two-col
 {row-divider}
 #### Testing it out
 That's it, you can start writing pages in markdown and see them updated in real time!
+
+{{<code/code-block>}}
+{{< figure src="/docs/quick-start/empty.png" title="" width="">}}
+{{</code/code-block>}}
+
 {divider}
+{{%code/code-block%}}
 ```bash 
 hugo serve
 
@@ -154,10 +166,13 @@ hugo serve
 
 hugo serve -D
 ```
+{{%/code/code-block%}}
+
 {row-divider}
 #### Build it
 That's it, you can start writing pages in markdown and see them updated in real time!
 {divider}
+{{%code/code-block%}}
 ```bash 
 hugo
 
@@ -165,3 +180,4 @@ hugo
 
 hugo -D
 ```
+{{%/code/code-block%}}
