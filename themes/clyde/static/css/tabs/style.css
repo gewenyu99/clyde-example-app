@@ -17,7 +17,7 @@ nav{
 
 .nav-tabs .nav-link{
   border-radius: inherit;
-  font-size: 16px;
+  font-size: 14px;
   justify-content: center;
 }
 
@@ -50,5 +50,5 @@ nav{
 }
 .tab-content>.tab-pane{
   border-radius: 0px;
-  padding: 8px;
+  padding: 1rem;
 }

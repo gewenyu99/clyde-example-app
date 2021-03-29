@@ -58,12 +58,6 @@
     <button id="logo-collapse-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
         <img id="logo" src="../../../default_button.png" alt="Clyde&#39;s Guide"> 
         
-        <div class="site-title">
-            <h3 class="sidebar-h1 "> 
-                Clyde&#39;s Guide  
-            </h3>
-        </div>
-        
     </button>
     
     
@@ -73,10 +67,11 @@
 <div class="card sidebar-card">
 
     
+    
     <div class="collapse-header">
         <a class="nav-link" href="../../../docs/quick-start/"> 
             <i class="icon-layers navicon"></i>
-            <h3 class="sidebar-h1  mainitem" 
+            <h3 class="sidebar-h1 mainitem" 
             id="">
                 Quick Start
             </h3>
@@ -111,10 +106,14 @@
     
 
     
+    
+
+    
+    
     <div class="collapse-header">
         <a class="nav-link" href="../../../docs/folder-structure/"> 
             <i class="icon-folder navicon"></i>
-            <h3 class="sidebar-h1  mainitem" 
+            <h3 class="sidebar-h1 mainitem" 
             id="">
                 Folder Structure
             </h3>
@@ -149,10 +148,14 @@
     
 
     
+    
+
+    
+    
     <div class="collapse-header">
         <a class="nav-link" href="../../../docs/layout/"> 
             <i class="icon-layout navicon"></i>
-            <h3 class="sidebar-h1  mainitem" 
+            <h3 class="sidebar-h1 mainitem" 
             id="">
                 Page Layout
             </h3>
@@ -187,10 +190,14 @@
     
 
     
+    
+
+    
+    
     <div class="collapse-header">
         <a class="nav-link" href="../../../docs/short-code/"> 
             <i class="icon-code navicon"></i>
-            <h3 class="sidebar-h1  mainitem" 
+            <h3 class="sidebar-h1 mainitem" 
             id="">
                 Shortcode
             </h3>
@@ -234,11 +241,19 @@
     </div>
     
 
+    
+    
+
 </div>
  
-    <div class="footer-container">
-    
-</div>
+    <div class="collapse-header">
+        <a class="nav-link" href="../../../docs/support/"> 
+            <i class="icon-help-circle navicon"></i>
+            <h3 class="sidebar-h1 mainitem">
+                Support
+            </h3>
+        </a>
+    </div>
 </div>
 <button id="sidebar-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
     <i class="icon-menu mobile"></i>
@@ -247,12 +262,12 @@
 
 
 
-<div class="content" id="content"><div class="content-header">
+<div class="content" id="content"><div class="content-header hasmenu">
     <div id="search-input-div">
         <button class="search-button" id="search-button" data-toggle="modal" data-target="#search-input-modal">
             <h3 class="search-button-text">
                 <i class="icon-search search-icon"></i>
-                Find anything
+                Search Documentation
             </h3>
         </button>
     
@@ -496,32 +511,22 @@ Regular text
     </div>
     
 <div class="footer-root">
-    <div class="footer-prev">
-        
-            <a class="content-header-nav-link" href="http://example.org/clyde-example-app/docs/short-code/tabs/">
-                <i class='icon-arrow-left'></i>
-            </a>
-        
-    </div>
-    <div class="footer-nav">
-        
-        <a class="content-header-nav-link" href="../../../">
+    <hr class="solid footer-div">
+    <div class="footer-nav-root">
+        <div class="footer-prev">
             
-                <i class='icon-home'></i>
-             
-        </a>
-        
-        <a class="content-header-nav-link" href="https://github.com/gewenyu99/clyde-example-app">
+                <a class="content-header-nav-link arrow-nav" href="../../../docs/short-code/tabs/">
+                    <i class='icon-arrow-left'></i>
+                </a>
             
-                <i class='icon-github'></i>
-             
-        </a>
-        
+        </div>
+        <div class="footer-nav">
+            
+        </div>
+        <div class="footer-next">
+            
+        </div>
     </div>
-    <div class="footer-next">
-        
-    </div>
-
 </div>
 </div>
 </div>

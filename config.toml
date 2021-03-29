@@ -24,7 +24,7 @@ canonifyURLs = true
       autoHeadingIDType = "github"
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = false
+      unsafe = true
       xhtml = false
       
 [params]
@@ -46,7 +46,7 @@ canonifyURLs = true
     body_font = "Roboto"
     code_font = "Source Code Pro"
 
-    show_title = true
+    show_title = false
 [outputs]
     section = ["HTML"]
     home = ["JSON", "HTML"]

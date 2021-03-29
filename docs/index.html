@@ -224,12 +224,6 @@
     <button id="logo-collapse-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
         <img id="logo" src="./default_button.png" alt="Clyde&#39;s Guide"> 
         
-        <div class="site-title">
-            <h3 class="sidebar-h1 "> 
-                Clyde&#39;s Guide  
-            </h3>
-        </div>
-        
     </button>
     
     
@@ -239,10 +233,11 @@
 <div class="card sidebar-card">
 
     
+    
     <div class="collapse-header">
         <a class="nav-link" href="./docs/quick-start/"> 
             <i class="icon-layers navicon"></i>
-            <h3 class="sidebar-h1  mainitem" 
+            <h3 class="sidebar-h1 mainitem" 
             id="">
                 Quick Start
             </h3>
@@ -277,10 +272,14 @@
     
 
     
+    
+
+    
+    
     <div class="collapse-header">
         <a class="nav-link" href="./docs/folder-structure/"> 
             <i class="icon-folder navicon"></i>
-            <h3 class="sidebar-h1  mainitem" 
+            <h3 class="sidebar-h1 mainitem" 
             id="">
                 Folder Structure
             </h3>
@@ -315,10 +314,14 @@
     
 
     
+    
+
+    
+    
     <div class="collapse-header">
         <a class="nav-link" href="./docs/layout/"> 
             <i class="icon-layout navicon"></i>
-            <h3 class="sidebar-h1  mainitem" 
+            <h3 class="sidebar-h1 mainitem" 
             id="">
                 Page Layout
             </h3>
@@ -353,10 +356,14 @@
     
 
     
+    
+
+    
+    
     <div class="collapse-header">
         <a class="nav-link" href="./docs/short-code/"> 
             <i class="icon-code navicon"></i>
-            <h3 class="sidebar-h1  mainitem" 
+            <h3 class="sidebar-h1 mainitem" 
             id="">
                 Shortcode
             </h3>
@@ -400,11 +407,19 @@
     </div>
     
 
+    
+    
+
 </div>
  
-    <div class="footer-container">
-    
-</div>
+    <div class="collapse-header">
+        <a class="nav-link" href="./docs/support/"> 
+            <i class="icon-help-circle navicon"></i>
+            <h3 class="sidebar-h1 mainitem">
+                Support
+            </h3>
+        </a>
+    </div>
 </div>
 <button id="sidebar-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
     <i class="icon-menu mobile"></i>
@@ -413,12 +428,12 @@
 
 
 
-<div class="content" id="content"><div class="content-header">
+<div class="content" id="content"><div class="content-header hasmenu">
     <div id="search-input-div">
         <button class="search-button" id="search-button" data-toggle="modal" data-target="#search-input-modal">
             <h3 class="search-button-text">
                 <i class="icon-search search-icon"></i>
-                Find anything
+                Search Documentation
             </h3>
         </button>
     
@@ -464,9 +479,70 @@
     
     <div class="row">
         <div class="content-area">
-            <p class="boxtext">Before we begin, install Hugo on your system.</p>
+            <p class="boxtext"></p>
+
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="./js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<p>Before we begin, install <code>Hugo</code> on your system.</p>
 <p><a href="https://gohugo.io/getting-started/installing/">Hugo Documentation</a></p>
-<p>You&rsquo;ll also need git for source control and an IDE you&rsquo;re comfortable with. Clyde was written with Visual Studio Code.</p>
+<p>You&rsquo;ll also need <code>git</code> for source control and an IDE you&rsquo;re comfortable with. Clyde was written with <code>Visual Studio Code</code>.</p>
         </div>
         <div class="example-area">
             
@@ -487,12 +563,24 @@
 <p>Then, we can add the Clyde theme.</p>
         </div>
         <div class="example-area">
-            </p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site example-site
+            <div class="code-block">
+        <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site example-site
 <span class="nb">cd</span> example-site
 git init
 git submodule add https://github.com/DNAstack/clyde.git themes/clyde
-</code></pre></div><p>
+</code></pre></td></tr></table>
+</div>
+</div>
+</div></p>
+<p>
         </div>
     </div>
     
@@ -571,7 +659,7 @@ git submodule add https://github.com/DNAstack/clyde.git themes/clyde
       <span class="nx">autoHeadingIDType</span> <span class="p">=</span> <span class="s2">&#34;github&#34;</span>
     <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">renderer</span><span class="p">]</span>
       <span class="nx">hardWraps</span> <span class="p">=</span> <span class="kc">false</span>
-      <span class="nx">unsafe</span> <span class="p">=</span> <span class="kc">false</span>
+      <span class="nx">unsafe</span> <span class="p">=</span> <span class="kc">true</span>
       <span class="nx">xhtml</span> <span class="p">=</span> <span class="kc">false</span>
       
 <span class="p">[</span><span class="nx">params</span><span class="p">]</span>
@@ -741,15 +829,35 @@ layout: two-col
             <p class="boxtext"></p>
 <h4 id="testing-it-out">Testing it out</h4>
 <p>That&rsquo;s it, you can start writing pages in markdown and see them updated in real time!</p>
+
+
+<div class="code-block">
+        
+
+<link rel="stylesheet" href="./css/hugo-easy-gallery.css" />
+<div class="no-gutters box" >
+  <figure class="col-xs-8" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img border" style="background-image: url('/docs/quick-start/empty.png');">
+      <img itemprop="thumbnail " src="./docs/quick-start/empty.png" />
+    </div>
+    <a href="./docs/quick-start/empty.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+</div>
+<p></p>
         </div>
         <div class="example-area">
-            </p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo serve
+            <div class="code-block">
+        <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo serve
 
 <span class="c1"># if you want to include drafts</span>
 
 hugo serve -D
-</code></pre></div><p>
+</code></pre></div>
+</div></p>
+<p>
         </div>
     </div>
     
@@ -766,43 +874,34 @@ hugo serve -D
 <p>That&rsquo;s it, you can start writing pages in markdown and see them updated in real time!</p>
         </div>
         <div class="example-area">
-            </p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo
+            <div class="code-block">
+        <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo
 
 <span class="c1"># if you want to include drafts</span>
 
 hugo -D
 </code></pre></div>
+</div></p>
         </div>
     </div>
     
 <div class="footer-root">
-    <div class="footer-prev">
-        
-    </div>
-    <div class="footer-nav">
-        
-        <a class="content-header-nav-link" href="./">
+    <hr class="solid footer-div">
+    <div class="footer-nav-root">
+        <div class="footer-prev">
             
-                <i class='icon-home'></i>
-             
-        </a>
-        
-        <a class="content-header-nav-link" href="https://github.com/gewenyu99/clyde-example-app">
+        </div>
+        <div class="footer-nav">
             
-                <i class='icon-github'></i>
-             
-        </a>
-        
+        </div>
+        <div class="footer-next">
+            
+                <a class="content-header-nav-link" href="./docs/quick-start/config/">
+                    <i class='icon-arrow-right arrow-nav'></i>
+                </a>
+            
+        </div>
     </div>
-    <div class="footer-next">
-        
-            <a class="content-header-nav-link" href="http://example.org/clyde-example-app/docs/quick-start/config/">
-                <i class='icon-arrow-right'></i>
-            </a>
-        
-    </div>
-
 </div>
 </div>
 </div>

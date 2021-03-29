@@ -3,20 +3,25 @@
 <div class="sidebar" id="sidebar-nav">
     {{ $logo:= site.Params.logo }}
     <button id="logo-collapse-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
-        <img id="logo" src="{{ $logo }}" alt="{{ site.Title }}"> 
+        <img id="logo{{if site.Params.show_title}}hide{{end}}" src="{{ $logo }}" alt="{{ site.Title }}"> 
         {{if site.Params.show_title}}
         <div class="site-title">
-            <h3 class="sidebar-h1 "> 
-                {{.Site.Title}}  
+            <h3 class="site-title-text"> 
+                {{.Site.Title}}
             </h3>
         </div>
         {{end}}
     </button>
     <!-- renders nav items -->
     {{ template "nav_item" .}} 
-    {{if site.Menus }}
-        {{- partial "footer.html" . -}}
-    {{end}}
+    <div class="collapse-header">
+        <a class="nav-link" href="/{{.Section}}/support/"> 
+            <i class="icon-help-circle navicon"></i>
+            <h3 class="sidebar-h1 mainitem">
+                Support
+            </h3>
+        </a>
+    </div>
 </div>
 <button id="sidebar-btn" onclick="(function(){document.getElementById('sidebar-nav').classList.toggle('show');document.getElementById('content').classList.toggle('showing-nav')})()" >
     <i class="icon-menu mobile"></i>
@@ -31,10 +36,22 @@
 <div class="card sidebar-card">
 {{ range (where .Site.Pages "Type" "category") }}
     {{if eq $curSection .Section}}
+    {{if eq (len .Pages) 0}}
+    {{else if eq (len .Pages) 1}}
     <div class="collapse-header">
         <a class="nav-link" href="{{.RelPermalink}}"> 
             <i class="{{ .Params.Icon }} navicon"></i>
-            <h3 class="sidebar-h1 {{if eq $curUID .File.UniqueID}}nav-highlight{{end}} mainitem" 
+            <h3 class="sidebar-h1 {{if $curPage.IsDescendant . }}nav-highlight{{end}} mainitem" 
+            id="{{if eq $curUID .File.UniqueID}}scrollto{{end}}">
+                {{ .Title }}
+            </h3>
+        </a>
+    </div>
+    {{ else }}
+    <div class="collapse-header">
+        <a class="nav-link" href="{{.RelPermalink}}"> 
+            <i class="{{ .Params.Icon }} navicon"></i>
+            <h3 class="sidebar-h1 mainitem" 
             id="{{if eq $curUID .File.UniqueID}}scrollto{{end}}">
                 {{ .Title }}
             </h3>
@@ -58,6 +75,9 @@
             {{ end }}                
         </div>
     </div>
+    {{ end }}
+
+    
     {{ end }}
 {{ end }}
 </div>

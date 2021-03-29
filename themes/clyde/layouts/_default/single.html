@@ -5,6 +5,8 @@
 {{- partial "page-layouts/content-header.html" (dict "root" . "ctx" $) -}}
 {{if eq .Params.layout "two-col"}}
 {{- partial "page-layouts/two-col.html" . -}}
+{{ else if eq .Params.layout "help"}}
+{{- partial "page-layouts/help.html" . -}}
 {{ else }}
 {{- partial "page-layouts/single-col.html" . -}}
 {{ end }}

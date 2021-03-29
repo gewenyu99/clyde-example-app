@@ -13,7 +13,7 @@ h1 {
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 140%;
     margin: 0;
     padding: 8px 0px;
@@ -24,38 +24,62 @@ h2 {
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 140%;
     margin: 0;
     padding: 8px 0px;
 
-    }
+}
+.text-area h2{
+    font-size: 24px;
+    font-weight: 700;
+}
 
 h3 {
     font-family: var(--heading-font) !important;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 140%;
     margin: 0;
     padding: 8px 0px;
+}
+
+.text-area h4{
+    font-size: 18px;
+    font-weight: 500;
 }
 
 h4 {
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 140%;
     margin: 0;
     padding: 8px 0px;
+}
+
+h5 {
+    font-family: var(--heading-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0;
+    padding: 8px 0px;
+}
+
+.text-area h5{
+    font-size: 16px;
+    font-weight: 500;
 }
 
 p {
     font-family: var(--body-font);
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 140%;
     color: var(--grey800);
 }
@@ -64,7 +88,7 @@ li {
     font-family: var(--body-font);
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 140%;
     color: var(--grey800);
 }
@@ -76,6 +100,14 @@ pre {
     display: flex;
     flex: none;
 }
+
+.chroma span{
+    font-size: inherit;
+}
+.chroma code {
+    font-size: 0.6875   em;
+}
+
 .img-fluid{
     padding: 27px 8px !important;
 }
@@ -130,4 +162,53 @@ pre {
     padding: 0px;
     margin: 0;
     text-align: center;
+}
+
+hr.solid {
+    border-top: 1px solid var(--grey-head);
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.text-area .table-bordered td, .table-bordered th {
+    border: 1px solid #E9EBEF;
+}
+
+table caption {
+    padding: .5em 0;
+}
+
+table tfoot tr td {
+    text-align: center !important;
+}
+
+@media (max-width: 39.9375em) {
+    .tablesaw-stack tbody tr:not(:last-child) {
+        border-bottom: 2px solid #0B0B0D;
+    }
+}
+
+.p {
+    text-align: center;
+    padding-top: 140px;
+    font-size: 14px;
+}
+
+.text-area .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F3F7FD;
+}
+
+
+td {
+    font-size: 14px;
+}
+
+
+th {
+    font-size: 14px;
+}
+
+.highlight code p {
+    font-family: Source Code Pro;
 }

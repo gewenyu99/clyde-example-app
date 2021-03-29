@@ -21,14 +21,14 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 140%;
-    padding: 8px 24px 8px 17px !important;
+    padding: 10px 24px 10px 17px !important;
     margin-left: 14px !important;
     margin: 0px;
     color: inherit;
 }
 
 .sidebar {
-    width: 225px;
+    width: 250px;
     margin: 0;
     background-color: var(--sidebar-bg);
     color: var(--sidebar-primary);
@@ -44,19 +44,28 @@
 }
 
 .site-title {
-    margin-top: 14px;
+    margin-top: 10px;   
     margin-right: 20px;
-    margin-bottom: 34px;
-    margin-left: 16px;
+    margin-bottom: 36px;
+    margin-left: 24px;
     height: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.sidebar-button {
+.site-title-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
-    padding: 8px 0px 8px 0px !important;
+    color: var(--sidebar-primary);
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0px;
+}
+.sidebar-button {
+    padding: 0px;
+    margin: 0px;
 }
 
 .sidebar-card {
@@ -75,8 +84,8 @@
     font-size: 22px;
     margin-right: 16px;
     padding-left: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }  
 
 .nav-list{
@@ -112,7 +121,9 @@
     width: 32px;
     margin-bottom: 44px;
 }
-
+#logohide{
+    display: none;
+}
 .nav-highlight{
     color: var(--sidebar-primary) !important;
     
@@ -165,62 +176,9 @@
     font-size: 12px;
 }
 
-@media (max-width: 1400px) {
 
-    /* CSS that should be displayed if width is equal to or less than 1000px goes here */
-    .sidebar .sidebar-h1{
-        display: none;
-    }
-    .sidebar .collapse{
-        display: none;
-    }
-    .sidebar .footer-container{
-        display: none;
-    }
-    .sidebar{
-        width: 72px;
-    }
 
-    @media(hover: hover) and (pointer: fine) {
-        .sidebar:hover .sidebar-h1{
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;  
-        }
-        .sidebar:hover .collapse.show{
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;  
-        }
-        .sidebar:hover{
-            width: 225px;
-        }
-    }
-
-    #logo-collapse-btn:hover {
-        cursor: pointer;
-    }
-
-    .sidebar.show .sidebar-h1{
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;  
-    }
-    .sidebar.show .collapse.show{
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;  
-    }
-    .sidebar.show{
-        width: 225px;
-    }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .sidebar{
         display: none;
     }
@@ -235,6 +193,7 @@
     .icon-menu.mobile{
         font-size: 32px;
         color: var(--grey600);
+        padding: 8px 0px 8px 0px;
     }
 
     #logo-collapse-btn{
@@ -251,6 +210,8 @@
         border: 0px;
         border-radius: 16px;
         background-color: transparent;
+        padding: 0px;
+        margin: 0px 8px;
     }
     #sidebar-btn:focus {
         outline: none;
