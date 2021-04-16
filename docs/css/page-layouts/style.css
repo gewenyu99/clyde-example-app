@@ -179,7 +179,25 @@
     padding-inline-start: 16px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5em) {
+    .example-area {
+        position: inherit;
+        margin-top: 56px;
+        margin-bottom: 72px;
+        padding-left: 0;
+        z-index: 1;
+        top: 0px;
+        bottom: 0px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;        
+        align-self: flex-start;
+        flex-direction: column;
+        justify-content: start;
+        flex: 1 1 0px;
+        width: 100%;
+    }
     .text-area figure {
         width: 100%;
     }
